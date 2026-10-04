@@ -1,0 +1,1541 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+		<title>KitaLabel — Demo SapaGo</title><link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin/><link rel="preconnect" href="https://fonts.googleapis.com"/><style type="text/css">@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcCM3FwrK3iLTcvneQg7Ca725JhhKnNqk4j1ebLhAm8SrXTc2dpRipWA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcCM3FwrK3iLTcvneQg7Ca725JhhKnNqk4j1ebLhAm8SrXTcWdtRipWA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcCM3FwrK3iLTcvneQg7Ca725JhhKnNqk4j1ebLhAm8SrXTch9tRipWA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcCM3FwrK3iLTcvneQg7Ca725JhhKnNqk4j1ebLhAm8SrXTc2dtRipWA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcCM3FwrK3iLTcvneQg7Ca725JhhKnNqk4j1ebLhAm8SrXTc69tRipWA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcCM3FwrK3iLTcvneQg7Ca725JhhKnNqk4j1ebLhAm8SrXTcB9xRipWA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcCM3FwrK3iLTcvneQg7Ca725JhhKnNqk4j1ebLhAm8SrXTcPtxRipWA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcCM3FwrK3iLTcvneQg7Ca725JhhKnNqk4j1ebLhAm8SrXTcWdxRipWA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcCM3FwrK3iLTcvneQg7Ca725JhhKnNqk4j1ebLhAm8SrXTccNxRipWA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyeAZ9hjQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuDyfAZ9hjQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuOKfAZ9hjQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuLyfAZ9hjQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuI6fAZ9hjQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuGKYAZ9hjQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuFuYAZ9hjQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuDyYAZ9hjQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/inter/v20/UcCO3FwrK3iLTeHuS_nVMrMxCp50SjIw2boKoduKmMEVuBWYAZ9hjQ.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v24/pxiAyp8kv8JHgFVrJJLmE0tCMPc.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v24/pxiDyp8kv8JHgFVrJJLmv1pVF9eL.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v24/pxiDyp8kv8JHgFVrJJLm21lVF9eL.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v24/pxiGyp8kv8JHgFVrJJLucHtF.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v24/pxiDyp8kv8JHgFVrJJLmg1hVF9eL.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v24/pxiDyp8kv8JHgFVrJJLmr19VF9eL.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v24/pxiDyp8kv8JHgFVrJJLmy15VF9eL.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v24/pxiDyp8kv8JHgFVrJJLm111VF9eL.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: italic;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v24/pxiDyp8kv8JHgFVrJJLm81xVF9eL.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v24/pxiGyp8kv8JHgFVrLPTucHtF.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLFj_Z1xlEA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLDz8Z1xlEA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v24/pxiEyp8kv8JHgFVrJJfedw.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLGT9Z1xlEA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLEj6Z1xlEA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLCz7Z1xlEA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLDD4Z1xlEA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/poppins/v24/pxiByp8kv8JHgFVrLBT5Z1xlEA.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 100;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLoHRuAj-lg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 200;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLgHQuAj-lg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLt_QuAj-lg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLoHQuAj-lg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 500;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLrPQuAj-lg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 600;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLl_XuAj-lg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLmbXuAj-lg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 800;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLgHXuAj-lg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: italic;
+  font-weight: 900;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v51/KFOKCnqEu92Fr1Mu53ZEC9_Vu3r1gIhOszmOClHrs6ljXfMMLijXuAj-lg.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 100;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbFmUiA8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 200;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuZEbVmUiA8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuaabVmUiA8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWubEbVmUiA8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWub2bVmUiA8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 600;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuYaalmUiA8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuYjalmUiA8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 800;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuZEalmUiA8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  font-stretch: normal;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/roboto/v51/KFOMCnqEu92Fr1ME7kSn66aGLdTylUAMQXC89YmC2DPNWuZtalmUiA8.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 100;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotoslab/v36/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojIWmb2Rm.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotoslab/v36/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoDISmb2Rm.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotoslab/v36/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjo0oSmb2Rm.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotoslab/v36/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjojISmb2Rm.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotoslab/v36/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjovoSmb2Rm.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotoslab/v36/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoUoOmb2Rm.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotoslab/v36/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoa4Omb2Rm.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotoslab/v36/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoDIOmb2Rm.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/robotoslab/v36/BngbUXZYTXPIvIBgJJSb6s3BzlRRfKOFbvjoJYOmb2Rm.ttf) format('truetype');
+}
+</style><link rel="preload" as="font" href="https://fonts.gstatic.com/s/roboto/v30/KFOlCnqEu92Fr1MmWUlfBBc4AMP6lQ.woff2" crossorigin/><link rel="preload" as="font" href="https://fonts.gstatic.com/s/opensans/v35/memvYaGs126MiZpBA-UvWbX2vVnXBbObj2OVTS-mu0SC55I.woff2" crossorigin/>
+<meta name='robots' content='noindex, nofollow' />
+
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+
+<!-- End Google Tag Manager for WordPress by gtm4wp.com --><link rel='dns-prefetch' href='//www.googletagmanager.com' />
+<link rel="alternate" type="application/rss+xml" title=" &raquo; Feed" href="https://marketz.kitalabel.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title=" &raquo; Comments Feed" href="https://marketz.kitalabel.com/comments/feed/" />
+
+
+<style id="wp-img-auto-sizes-contain-inline-css">
+img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
+/*# sourceURL=wp-img-auto-sizes-contain-inline-css */
+</style>
+<link rel='stylesheet' id='formidable-css' href='https://marketz.kitalabel.com/wp-admin/admin-ajax.php?action=frmpro_css&#038;ver=1215423' media='all' />
+<style id="wp-emoji-styles-inline-css">
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+/*# sourceURL=wp-emoji-styles-inline-css */
+</style>
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+/*# sourceURL=/wp-includes/css/classic-themes.min.css */
+</style>
+
+<style id="global-styles-inline-css">
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgb(6,147,227) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgb(252,185,0) 0%,rgb(255,105,0) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgb(255,105,0) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgb(255, 255, 255), 6px 6px rgb(0, 0, 0);--wp--preset--shadow--crisp: 6px 6px 0px rgb(0, 0, 0);}.wp-block-button{--wp--preset--dimension--25: 25%;--wp--preset--dimension--50: 50%;--wp--preset--dimension--75: 75%;--wp--preset--dimension--100: 100%;}:where(body) { margin: 0; }:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;font-style: inherit;font-weight: inherit;letter-spacing: inherit;line-height: inherit;padding-top: calc(0.667em + 2px);padding-right: calc(1.333em + 2px);padding-bottom: calc(0.667em + 2px);padding-left: calc(1.333em + 2px);text-decoration: none;text-transform: inherit;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+/*# sourceURL=global-styles-inline-css */
+</style>
+
+<link rel='stylesheet' id='hello-elementor-css' href='assets/0506de4a4d8f.css' media='all' />
+<link rel='stylesheet' id='hello-elementor-theme-style-css' href='assets/d45de6858351.css' media='all' />
+<link rel='stylesheet' id='hello-elementor-header-footer-css' href='assets/fb2a6430300b.css' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='assets/35ddd5474aec.css' media='all' />
+<link rel='stylesheet' id='elementor-post-12-css' href='assets/807de94d1d86.css' media='all' />
+<link rel='stylesheet' id='eael-general-css' href='assets/d72d7a849ab4.css' media='all' />
+<link rel='stylesheet' id='eael-1933-css' href='assets/8b9a7c441e95.css' media='all' />
+<link rel='stylesheet' id='elementor-icons-css' href='assets/9b315c75584b.css' media='all' />
+<style id="elementor-icons-inline-css">
+
+		.elementor-add-new-section .elementor-add-templately-promo-button{
+            background-color: #5d4fff !important;
+            background-image: url(assets/672f9cef3f38.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            position: relative;
+        }
+        
+		.elementor-add-new-section .elementor-add-templately-promo-button > i{
+            height: 12px;
+        }
+        
+        body .elementor-add-new-section .elementor-add-section-area-button {
+            margin-left: 0;
+        }
+
+		.elementor-add-new-section .elementor-add-templately-promo-button{
+            background-color: #5d4fff !important;
+            background-image: url(assets/672f9cef3f38.svg);
+            background-repeat: no-repeat;
+            background-position: center center;
+            position: relative;
+        }
+        
+		.elementor-add-new-section .elementor-add-templately-promo-button > i{
+            height: 12px;
+        }
+        
+        body .elementor-add-new-section .elementor-add-section-area-button {
+            margin-left: 0;
+        }
+/*# sourceURL=elementor-icons-inline-css */
+</style>
+<link rel='stylesheet' id='elementor-pro-css' href='assets/07ff5c366862.css' media='all' />
+<link rel='stylesheet' id='widget-image-css' href='assets/87d0e6678ec6.css' media='all' />
+<link rel='stylesheet' id='widget-heading-css' href='assets/ae64022f5204.css' media='all' />
+<link rel='stylesheet' id='widget-text-editor-css' href='assets/3ffee38dfb9f.css' media='all' />
+<link rel='stylesheet' id='widget-video-css' href='assets/e5fee5a1b179.css' media='all' />
+<link rel='stylesheet' id='widget-menu-anchor-css' href='assets/6f911e611b63.css' media='all' />
+<link rel='stylesheet' id='widget-spacer-css' href='assets/8394a1e3904d.css' media='all' />
+<link rel='stylesheet' id='widget-counter-css' href='assets/174c60dcfa33.css' media='all' />
+<link rel='stylesheet' id='swiper-css' href='assets/01c60337856c.css' media='all' />
+<link rel='stylesheet' id='e-swiper-css' href='assets/93c322e65d73.css' media='all' />
+<link rel='stylesheet' id='widget-image-carousel-css' href='assets/da61c5f03976.css' media='all' />
+<link rel='stylesheet' id='elementor-post-1933-css' href='assets/b9ccc8d4bd56.css' media='all' />
+<link rel='stylesheet' id='font-awesome-5-all-css' href='assets/85b7491b8cca.css' media='all' />
+<link rel='stylesheet' id='font-awesome-4-shim-css' href='assets/da537283deb3.css' media='all' />
+
+<link rel='stylesheet' id='elementor-icons-shared-0-css' href='assets/199cb0b13e67.css' media='all' />
+<link rel='stylesheet' id='elementor-icons-fa-solid-css' href='assets/6f5536d27c06.css' media='all' />
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+
+
+
+
+
+<link rel="alternate" title="JSON" type="application/json" href="https://marketz.kitalabel.com/wp-json/wp/v2/pages/1933" />
+
+
+<link rel='shortlink' href='https://marketz.kitalabel.com/' />
+<!-- HFCM by 99 Robots - Snippet # 3: GTM -->
+<!-- Google Tag Manager -->
+
+<!-- End Google Tag Manager -->
+<!-- /end HFCM by 99 Robots -->
+<!-- Google tag (gtag.js) -->
+
+
+
+<!-- Google Tag Manager -->
+
+<!-- End Google Tag Manager -->
+
+<!-- Google Tag Manager -->
+
+<!-- End Google Tag Manager -->
+
+<!-- Meta Pixel Code -->
+
+
+<!-- End Meta Pixel Code -->
+
+<!-- Contentsquare tracking -->
+		
+	<meta name="facebook-domain-verification" content="hyhrjqe15gely5fql0j9y08fbgqifa" />
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<!-- GTM Container placement set to automatic -->
+
+
+<!-- End Google Tag Manager for WordPress by gtm4wp.com --><meta name="generator" content="Elementor 3.27.5; features: additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
+<!-- Google Tag Manager -->
+
+<!-- End Google Tag Manager -->
+<!-- Meta Pixel Code -->
+<!--script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '587113042598726');
+fbq('track', 'PageView');
+</script>
+
+<!-- End Meta Pixel Code -->
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<link rel="icon" href="assets/81b458f5762d.png" sizes="32x32" />
+<link rel="icon" href="assets/81b458f5762d.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="assets/81b458f5762d.png" />
+<meta name="msapplication-TileImage" content="assets/81b458f5762d.png" />
+<style id="wp-custom-css">
+h1.entry-title {
+  display: none;
+}
+
+</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" /><link rel='stylesheet' id='eael-1936-css' href='assets/06a97c6bf7b1.css' media='all' />
+<link rel='stylesheet' id='elementor-post-1936-css' href='assets/2f6c72b03269.css' media='all' />
+<link rel='stylesheet' id='elementor-post-1938-css' href='assets/11d233c9c076.css' media='all' />
+<link rel='stylesheet' id='widget-accordion-css' href='assets/ee86fc0bbd38.css' media='all' />
+<link rel='stylesheet' id='elementor-post-1943-css' href='assets/ab258ac0575f.css' media='all' />
+<link rel='stylesheet' id='elementor-post-1950-css' href='assets/277d1db77426.css' media='all' />
+
+<link rel="stylesheet" href="demo.css"></head>
+<body class="home wp-singular page-template page-template-elementor_canvas page page-id-1933 wp-custom-logo wp-theme-hello-elementor elementor-default elementor-template-canvas elementor-kit-12 elementor-page elementor-page-1933">
+	
+<!-- GTM Container placement set to automatic -->
+<!-- Google Tag Manager (noscript) -->
+				
+<!-- End Google Tag Manager (noscript) --><!-- Google Tag Manager (noscript) -->
+
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- GTM Container placement set to automatic -->
+<!-- Google Tag Manager (noscript) -->		<div data-elementor-type="wp-page" data-elementor-id="1933" class="elementor elementor-1933" data-elementor-post-type="page">
+				<div class="elementor-element elementor-element-18d2839 elementor-hidden-mobile e-flex e-con-boxed e-con e-parent" data-id="18d2839" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;sticky&quot;:&quot;top&quot;,&quot;sticky_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;],&quot;sticky_offset&quot;:0,&quot;sticky_effects_offset&quot;:0}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-bf59656 elementor-widget elementor-widget-theme-site-logo elementor-widget-image" data-id="bf59656" data-element_type="widget" data-widget_type="theme-site-logo.default">
+				<div class="elementor-widget-container">
+											<a href="#">
+			<img fetchpriority="high" decoding="async" width="486" height="118" src="assets/54fccb1ceebf.png" class="attachment-full size-full wp-image-30" alt="" srcset="assets/54fccb1ceebf.png 486w, assets/bc9d3c871f1f.png 300w" sizes="(max-width: 486px) 100vw, 486px" />				</a>
+											</div>
+				</div>
+				<div class="elementor-element elementor-element-a7a2cac elementor-widget elementor-widget-html" data-id="a7a2cac" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+					<!-- Meta Pixel Code -->
+
+
+<!-- End Meta Pixel Code -->				</div>
+				</div>
+				<div class="elementor-element elementor-element-931c0b5 elementor-mobile-align-center elementor-align-right elementor-widget__width-inherit elementor-tablet-align-right elementor-widget elementor-widget-button" data-id="931c0b5" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="#sapago" data-chat="true">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Konsultasi Sekarang</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-7e7fada e-con-full elementor-hidden-desktop elementor-hidden-tablet e-flex e-con e-parent" data-id="7e7fada" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;sticky&quot;:&quot;top&quot;,&quot;sticky_on&quot;:[&quot;desktop&quot;,&quot;tablet&quot;,&quot;mobile&quot;],&quot;sticky_offset&quot;:0,&quot;sticky_effects_offset&quot;:0}">
+				<div class="elementor-element elementor-element-283dc83 elementor-widget elementor-widget-theme-site-logo elementor-widget-image" data-id="283dc83" data-element_type="widget" data-widget_type="theme-site-logo.default">
+				<div class="elementor-widget-container">
+											<a href="#">
+			<img fetchpriority="high" decoding="async" width="486" height="118" src="assets/54fccb1ceebf.png" class="attachment-full size-full wp-image-30" alt="" srcset="assets/54fccb1ceebf.png 486w, assets/bc9d3c871f1f.png 300w" sizes="(max-width: 486px) 100vw, 486px" />				</a>
+											</div>
+				</div>
+				<div class="elementor-element elementor-element-2638080 elementor-widget elementor-widget-html" data-id="2638080" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+					<!-- Meta Pixel Code -->
+
+
+<!-- End Meta Pixel Code -->				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-a7986c6 e-flex e-con-boxed e-con e-parent" data-id="a7986c6" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-2064ec1e e-con-full e-flex e-con e-child" data-id="2064ec1e" data-element_type="container">
+				<div class="elementor-element elementor-element-4c3d878 elementor-widget elementor-widget-heading" data-id="4c3d878" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default"><span class="highlight-text" style="color:white">Banyak Desain </span><br>Sekali Cetak, <br>Hemat Maksimal!</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-d08518d elementor-widget elementor-widget-text-editor" data-id="d08518d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Cetak di KitaLabel sudah pasti dapat diandalkan, dipercaya, dan memilki kualitas terbaik untnuk label produk mu.</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-2bb88864 elementor-mobile-align-justify elementor-widget elementor-widget-button" data-id="2bb88864" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="#promo">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Lihat Penawaran</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-794789f e-flex e-con-boxed e-con e-child" data-id="794789f" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-5cf52ff elementor-widget elementor-widget-video" data-id="5cf52ff" data-element_type="widget" data-settings="{&quot;video_type&quot;:&quot;hosted&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;mute&quot;:&quot;yes&quot;,&quot;loop&quot;:&quot;yes&quot;}" data-widget_type="video.default">
+				<div class="elementor-widget-container">
+							<div class="e-hosted-video elementor-wrapper elementor-open-inline">
+					<video class="elementor-video" src="assets/00a8d8f05585.mp4" autoplay="" loop="" muted="muted" controlsList="nodownload"></video>
+				</div>
+						</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-61ea0b37 e-flex e-con-boxed e-con e-parent" data-id="61ea0b37" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-cbe693f elementor-widget elementor-widget-menu-anchor" data-id="cbe693f" data-element_type="widget" data-widget_type="menu-anchor.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-menu-anchor" id="usp"></div>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-9542d98 e-flex e-con-boxed e-con e-child" data-id="9542d98" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-571ce11 elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="571ce11" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Punya beberapa varian kenapa harus bingung?</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-4153e57 elementor-hidden-desktop elementor-hidden-tablet elementor-widget elementor-widget-image" data-id="4153e57" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="704" height="506" src="assets/86c173d31528.png" class="attachment-large size-large wp-image-2286" alt="" srcset="assets/86c173d31528.png 704w, assets/914353ae7402.png 300w" sizes="(max-width: 704px) 100vw, 704px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-7c88177 elementor-widget elementor-widget-text-editor" data-id="7c88177" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Kami bisa support cetak hingga 5 varian design dalam 1 kali cetak</p>								</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-77ab7c9 e-con-full elementor-hidden-mobile e-flex e-con e-child" data-id="77ab7c9" data-element_type="container">
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-6b8fc720 e-flex e-con-boxed e-con e-parent" data-id="6b8fc720" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-2b99341 elementor-widget elementor-widget-spacer" data-id="2b99341" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-6890f1db e-flex e-con-boxed e-con e-child" data-id="6890f1db" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-6d50a21a e-flex e-con-boxed e-con e-child" data-id="6d50a21a" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-1564b7f elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="1564b7f" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Kenapa KitaLabel Pilihan Terbaik untuk Bisnismu?</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-eceffc9 elementor-widget elementor-widget-text-editor" data-id="eceffc9" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Cetak di KitaLabel sudah pasti dapat diandalkan, dipercaya, dan memilki kualitas terbaik untnuk label produk mu.</p>								</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-18f3efb e-flex e-con-boxed e-con e-child" data-id="18f3efb" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-2c86215 e-con-full e-flex e-con e-child" data-id="2c86215" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-29d7b03 e-con-full e-flex e-con e-child" data-id="29d7b03" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-5812dab elementor-view-default elementor-widget elementor-widget-icon" data-id="5812dab" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none"><rect width="80" height="80" rx="40" fill="white"></rect><mask id="path-2-outside-1_8710_2159" maskUnits="userSpaceOnUse" x="11.9609" y="13" width="56" height="58" fill="black"><rect fill="white" x="11.9609" y="13" width="56" height="58"></rect><path fill-rule="evenodd" clip-rule="evenodd" d="M55.4447 46.1679C57.6924 43.0402 59.016 39.2038 59.016 35.0583C59.016 24.5327 50.4833 16 39.9577 16C29.4321 16 20.8994 24.5327 20.8994 35.0583C20.8994 39.2279 22.2385 43.0849 24.51 46.2225L17.9609 57.5748L25.6145 57.1685L29.0916 64L35.146 53.5039C36.683 53.9037 38.2955 54.1165 39.9577 54.1165C41.6441 54.1165 43.2794 53.8975 44.8366 53.4863L50.9091 64L54.3863 57.1685L62.0398 57.5748L55.4447 46.1679Z"></path></mask><path fill-rule="evenodd" clip-rule="evenodd" d="M55.4447 46.1679C57.6924 43.0402 59.016 39.2038 59.016 35.0583C59.016 24.5327 50.4833 16 39.9577 16C29.4321 16 20.8994 24.5327 20.8994 35.0583C20.8994 39.2279 22.2385 43.0849 24.51 46.2225L17.9609 57.5748L25.6145 57.1685L29.0916 64L35.146 53.5039C36.683 53.9037 38.2955 54.1165 39.9577 54.1165C41.6441 54.1165 43.2794 53.8975 44.8366 53.4863L50.9091 64L54.3863 57.1685L62.0398 57.5748L55.4447 46.1679Z" fill="#0C1FFF"></path><path d="M55.4447 46.1679L53.0085 44.4172L51.8773 45.9913L52.8476 47.6695L55.4447 46.1679ZM24.51 46.2225L27.1086 47.7216L28.08 46.0378L26.94 44.4632L24.51 46.2225ZM17.9609 57.5748L15.3623 56.0757L12.6002 60.8636L18.12 60.5706L17.9609 57.5748ZM25.6145 57.1685L28.2881 55.8077L27.4033 54.0693L25.4554 54.1728L25.6145 57.1685ZM29.0916 64L26.418 65.3609L28.9269 70.2899L31.6903 65.499L29.0916 64ZM35.146 53.5039L35.9012 50.6005L33.6893 50.0252L32.5473 52.005L35.146 53.5039ZM44.8366 53.4863L47.4344 51.9859L46.2876 50.0003L44.0707 50.5857L44.8366 53.4863ZM50.9091 64L48.3113 65.5005L51.0756 70.2865L53.5827 65.3608L50.9091 64ZM54.3863 57.1685L54.5453 54.1727L52.5975 54.0693L51.7127 55.8077L54.3863 57.1685ZM62.0398 57.5748L61.8808 60.5706L67.4068 60.8639L64.637 56.0732L62.0398 57.5748ZM56.016 35.0583C56.016 38.555 54.9018 41.7827 53.0085 44.4172L57.8809 47.9186C60.483 44.2977 62.016 39.8526 62.016 35.0583H56.016ZM39.9577 19C48.8264 19 56.016 26.1895 56.016 35.0583H62.016C62.016 22.8758 52.1401 13 39.9577 13V19ZM23.8994 35.0583C23.8994 26.1895 31.0889 19 39.9577 19V13C27.7752 13 17.8994 22.8758 17.8994 35.0583H23.8994ZM26.94 44.4632C25.0266 41.8203 23.8994 38.5753 23.8994 35.0583H17.8994C17.8994 39.8806 19.4503 44.3495 22.08 47.9817L26.94 44.4632ZM20.5595 59.0739L27.1086 47.7216L21.9114 44.7234L15.3623 56.0757L20.5595 59.0739ZM25.4554 54.1728L17.8019 54.579L18.12 60.5706L25.7735 60.1643L25.4554 54.1728ZM31.7652 62.6392L28.2881 55.8077L22.9409 58.5294L26.418 65.3609L31.7652 62.6392ZM32.5473 52.005L26.493 62.5011L31.6903 65.499L37.7447 55.0029L32.5473 52.005ZM39.9577 51.1165C38.5525 51.1165 37.1938 50.9368 35.9012 50.6005L34.3908 56.4073C36.1723 56.8707 38.0385 57.1165 39.9577 57.1165V51.1165ZM44.0707 50.5857C42.7613 50.9315 41.3833 51.1165 39.9577 51.1165V57.1165C41.9049 57.1165 43.7976 56.8635 45.6025 56.3869L44.0707 50.5857ZM42.2388 54.9867L48.3113 65.5005L53.5069 62.4996L47.4344 51.9859L42.2388 54.9867ZM53.5827 65.3608L57.0599 58.5294L51.7127 55.8077L48.2355 62.6392L53.5827 65.3608ZM54.2273 60.1643L61.8808 60.5706L62.1989 54.579L54.5453 54.1727L54.2273 60.1643ZM64.637 56.0732L58.0419 44.6663L52.8476 47.6695L59.4427 59.0764L64.637 56.0732Z" fill="white" mask="url(#path-2-outside-1_8710_2159)"></path><path d="M39.9567 54.1165C50.4823 54.1165 59.015 45.5839 59.015 35.0583C59.015 24.5327 50.4823 16 39.9567 16C29.4311 16 20.8984 24.5327 20.8984 35.0583C20.8984 45.5839 29.4311 54.1165 39.9567 54.1165Z" fill="#FFBA32"></path><path d="M24.5184 46.2079L17.9609 57.5748L25.6145 57.1685L29.0916 64L35.1578 53.4835C30.8113 52.3591 27.079 49.7417 24.5184 46.2079Z" fill="#0C1FFF"></path><path d="M55.4352 46.1512C52.8935 49.6945 49.1612 52.3213 44.8242 53.4646L50.9093 64L54.3864 57.1685L62.04 57.5748L55.4352 46.1512Z" fill="#0C1FFF"></path><path d="M39.9587 48.8724C47.5881 48.8724 53.7729 42.6876 53.7729 35.0583C53.7729 27.4289 47.5881 21.2441 39.9587 21.2441C32.3293 21.2441 26.1445 27.4289 26.1445 35.0583C26.1445 42.6876 32.3293 48.8724 39.9587 48.8724Z" fill="#FF8A00"></path><path d="M49.4256 33.5654C49.8508 33.1496 49.6146 32.422 49.0288 32.337L43.5768 31.5433C43.3406 31.5055 43.1422 31.3638 43.0382 31.1465L40.6004 26.2047C40.3359 25.6661 39.5705 25.6661 39.3059 26.2047L36.8776 31.1465C36.7737 31.3543 36.5658 31.5055 36.339 31.5433L30.887 32.337C30.3012 32.422 30.065 33.1496 30.4902 33.5654L34.4303 37.411C34.6004 37.5811 34.676 37.8173 34.6382 38.0441L33.7122 43.4677C33.6083 44.0535 34.2319 44.5071 34.7611 44.2236L39.6366 41.663C39.8445 41.5496 40.0996 41.5496 40.3075 41.663L45.1831 44.2236C45.7122 44.4976 46.3264 44.0535 46.2319 43.4677L45.2965 38.0441C45.2587 37.8079 45.3343 37.5717 45.5044 37.411L49.4256 33.5654Z" fill="white"></path></svg>			</div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-8aeceb7 elementor-widget elementor-widget-heading" data-id="8aeceb7" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Cetak Banyak Varian dalam Sekali Produksi</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-92ca5c6 elementor-widget elementor-widget-text-editor" data-id="92ca5c6" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Hemat waktu dan biaya dengan mencetak hingga 5 varian sekaligus tanpa perlu investasi plat tambahan.</p>								</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-b7f6c25 e-con-full e-flex e-con e-child" data-id="b7f6c25" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-9aa623f e-flex e-con-boxed e-con e-child" data-id="9aa623f" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-ed26b10 e-con-full e-flex e-con e-child" data-id="ed26b10" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-54a3e7b e-con-full e-flex e-con e-child" data-id="54a3e7b" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-1269935 elementor-view-default elementor-widget elementor-widget-icon" data-id="1269935" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none"><rect width="80" height="80" rx="40" fill="white"></rect><mask id="path-2-outside-1_8723_2324" maskUnits="userSpaceOnUse" x="13" y="13.0001" width="54" height="54" fill="black"><rect fill="white" x="13" y="13.0001" width="54" height="54"></rect><path fill-rule="evenodd" clip-rule="evenodd" d="M35.8405 21.2873C35.9116 21.0653 35.9485 20.8381 35.9485 20.607C35.9485 18.0627 31.4829 16.0001 25.9742 16.0001C20.4656 16.0001 16 18.0627 16 20.607C16 21.0332 16.1253 21.446 16.3599 21.8378C16.1267 21.6673 16 21.4807 16 21.2779V58.7218C16 61.2661 20.4656 63.3287 25.9742 63.3287C31.4829 63.3287 35.9485 61.2661 35.9485 58.7218V58.7203L35.9486 58.7221L40.5595 59.0072C40.5626 59.0074 40.5658 59.0075 40.569 59.0074C40.576 59.0072 40.5829 59.0064 40.5897 59.0049L42.8716 58.5058C42.8824 58.5034 42.8935 58.5027 42.9043 58.5036L47.5135 58.8943L52.1168 59.1984C52.132 59.1994 52.1471 59.1973 52.1614 59.1921L54.4276 58.3725C54.4443 58.3665 54.4622 58.3646 54.4798 58.367L56.7664 58.6781L61.3694 59.2592C61.3853 59.2612 61.4014 59.2598 61.4167 59.2549L63.7728 58.5021C63.8369 58.4817 63.8677 58.4089 63.8379 58.3486L62.5207 55.6891C62.4933 55.6341 62.4933 55.5698 62.5205 55.5149L63.9797 52.5687C64.0068 52.5139 64.0068 52.4496 63.9797 52.3949L62.5205 49.4484C62.4934 49.3936 62.4934 49.3293 62.5205 49.2746L63.9797 46.3281C64.0068 46.2733 64.0068 46.209 63.9797 46.1543L62.5206 43.2083C62.4935 43.1535 62.4935 43.0892 62.5206 43.0344L63.9797 40.0883C64.0068 40.0335 64.0068 39.9692 63.9797 39.9145L62.5205 36.968C62.4934 36.9133 62.4934 36.8489 62.5205 36.7942L63.9797 33.8476C64.0068 33.7929 64.0068 33.7286 63.9797 33.6738L62.5205 30.7272C62.4934 30.6724 62.4934 30.6081 62.5205 30.5533L63.9797 27.6068C64.0068 27.552 64.0068 27.4877 63.9797 27.433L62.5205 24.4859C62.4934 24.4312 62.4934 24.3669 62.5205 24.3121L63.9407 21.4438C63.9759 21.3729 63.9272 21.2892 63.8482 21.2852L61.402 21.1628C61.3962 21.1625 61.3914 21.1627 61.3856 21.1633L56.7794 21.6531C56.7718 21.6539 56.7642 21.6539 56.7566 21.6532L52.1655 21.1858C52.1502 21.1842 52.1349 21.1858 52.1202 21.1906L49.8756 21.9245C49.8461 21.9342 49.8141 21.9309 49.7872 21.9156L47.557 20.6484C47.5309 20.6336 47.4999 20.63 47.4712 20.6386L45.2185 21.313C45.2081 21.3161 45.1973 21.3177 45.1865 21.3176L35.9485 21.2876V21.2779L35.9484 21.2876L35.8405 21.2873Z"></path></mask><path fill-rule="evenodd" clip-rule="evenodd" d="M35.8405 21.2873C35.9116 21.0653 35.9485 20.8381 35.9485 20.607C35.9485 18.0627 31.4829 16.0001 25.9742 16.0001C20.4656 16.0001 16 18.0627 16 20.607C16 21.0332 16.1253 21.446 16.3599 21.8378C16.1267 21.6673 16 21.4807 16 21.2779V58.7218C16 61.2661 20.4656 63.3287 25.9742 63.3287C31.4829 63.3287 35.9485 61.2661 35.9485 58.7218V58.7203L35.9486 58.7221L40.5595 59.0072C40.5626 59.0074 40.5658 59.0075 40.569 59.0074C40.576 59.0072 40.5829 59.0064 40.5897 59.0049L42.8716 58.5058C42.8824 58.5034 42.8935 58.5027 42.9043 58.5036L47.5135 58.8943L52.1168 59.1984C52.132 59.1994 52.1471 59.1973 52.1614 59.1921L54.4276 58.3725C54.4443 58.3665 54.4622 58.3646 54.4798 58.367L56.7664 58.6781L61.3694 59.2592C61.3853 59.2612 61.4014 59.2598 61.4167 59.2549L63.7728 58.5021C63.8369 58.4817 63.8677 58.4089 63.8379 58.3486L62.5207 55.6891C62.4933 55.6341 62.4933 55.5698 62.5205 55.5149L63.9797 52.5687C64.0068 52.5139 64.0068 52.4496 63.9797 52.3949L62.5205 49.4484C62.4934 49.3936 62.4934 49.3293 62.5205 49.2746L63.9797 46.3281C64.0068 46.2733 64.0068 46.209 63.9797 46.1543L62.5206 43.2083C62.4935 43.1535 62.4935 43.0892 62.5206 43.0344L63.9797 40.0883C64.0068 40.0335 64.0068 39.9692 63.9797 39.9145L62.5205 36.968C62.4934 36.9133 62.4934 36.8489 62.5205 36.7942L63.9797 33.8476C64.0068 33.7929 64.0068 33.7286 63.9797 33.6738L62.5205 30.7272C62.4934 30.6724 62.4934 30.6081 62.5205 30.5533L63.9797 27.6068C64.0068 27.552 64.0068 27.4877 63.9797 27.433L62.5205 24.4859C62.4934 24.4312 62.4934 24.3669 62.5205 24.3121L63.9407 21.4438C63.9759 21.3729 63.9272 21.2892 63.8482 21.2852L61.402 21.1628C61.3962 21.1625 61.3914 21.1627 61.3856 21.1633L56.7794 21.6531C56.7718 21.6539 56.7642 21.6539 56.7566 21.6532L52.1655 21.1858C52.1502 21.1842 52.1349 21.1858 52.1202 21.1906L49.8756 21.9245C49.8461 21.9342 49.8141 21.9309 49.7872 21.9156L47.557 20.6484C47.5309 20.6336 47.4999 20.63 47.4712 20.6386L45.2185 21.313C45.2081 21.3161 45.1973 21.3177 45.1865 21.3176L35.9485 21.2876V21.2779L35.9484 21.2876L35.8405 21.2873Z" fill="#F1F1F4"></path><path d="M35.8405 21.2873L32.9836 20.3717L31.7331 24.274L35.8308 24.2873L35.8405 21.2873ZM16.3599 21.8378L14.5897 24.2598L18.9338 20.2966L16.3599 21.8378ZM35.9485 58.7203L38.9393 58.4853L32.9485 58.7203H35.9485ZM35.9486 58.7221L32.9579 58.9571L33.162 61.5556L35.7635 61.7164L35.9486 58.7221ZM40.5595 59.0072L40.7527 56.0134L40.7446 56.0129L40.5595 59.0072ZM40.569 59.0074L40.6478 62.0064L40.6497 62.0063L40.569 59.0074ZM40.5897 59.0049L41.2271 61.9364L41.2308 61.9356L40.5897 59.0049ZM42.8716 58.5058L42.2338 55.5743L42.2306 55.575L42.8716 58.5058ZM42.9043 58.5036L42.6464 61.4925L42.651 61.4929L42.9043 58.5036ZM47.5135 58.8943L47.2601 61.8835L47.2879 61.8859L47.3157 61.8877L47.5135 58.8943ZM52.1168 59.1984L52.3205 56.2053L52.3145 56.2049L52.1168 59.1984ZM52.1614 59.1921L51.1411 56.3709L51.1405 56.3711L52.1614 59.1921ZM54.4276 58.3725L53.413 55.5493L53.4074 55.5514L54.4276 58.3725ZM54.4798 58.367L54.0689 61.3387L54.0754 61.3396L54.4798 58.367ZM56.7664 58.6781L56.362 61.6507L56.3763 61.6526L56.3906 61.6544L56.7664 58.6781ZM61.3694 59.2592L60.9936 62.2356L60.9988 62.2362L61.3694 59.2592ZM61.4167 59.2549L62.3285 62.113L62.3297 62.1126L61.4167 59.2549ZM63.7728 58.5021L62.8619 55.6437L62.8597 55.6444L63.7728 58.5021ZM63.8379 58.3486L66.527 57.0188L66.5262 57.0172L63.8379 58.3486ZM62.5207 55.6891L65.209 54.3577L65.2067 54.353L62.5207 55.6891ZM62.5205 55.5149L65.2084 56.8474L65.2088 56.8464L62.5205 55.5149ZM63.9797 52.5687L66.6681 53.9001L66.6685 53.8993L63.9797 52.5687ZM63.9797 52.3949L66.6684 51.0642L66.6681 51.0635L63.9797 52.3949ZM62.5205 49.4484L59.8317 50.7789L59.8321 50.7798L62.5205 49.4484ZM62.5205 49.2746L59.8321 47.9432L59.8317 47.944L62.5205 49.2746ZM63.9797 46.3281L66.6681 47.6595L66.6684 47.6588L63.9797 46.3281ZM63.9797 46.1543L66.6685 44.8236L66.668 44.8228L63.9797 46.1543ZM62.5206 43.2083L59.8318 44.5388L59.8323 44.5398L62.5206 43.2083ZM62.5206 43.0344L59.8322 41.7029L59.8309 41.7057L62.5206 43.0344ZM63.9797 40.0883L66.6681 41.4198L66.6685 41.4189L63.9797 40.0883ZM63.9797 39.9145L66.6685 38.5838L66.6681 38.5831L63.9797 39.9145ZM62.5205 36.968L59.8317 38.2985L59.8321 38.2994L62.5205 36.968ZM62.5205 36.7942L59.8321 35.4628L59.8317 35.4637L62.5205 36.7942ZM63.9797 33.8476L66.6681 35.179L66.6685 35.1783L63.9797 33.8476ZM63.9797 33.6738L66.6685 32.3432L66.6681 32.3425L63.9797 33.6738ZM62.5205 30.7272L59.8317 32.0577L59.8321 32.0585L62.5205 30.7272ZM62.5205 30.5533L59.8321 29.222L59.8317 29.2228L62.5205 30.5533ZM63.9797 27.6068L66.6681 28.9382L66.6684 28.9375L63.9797 27.6068ZM63.9797 27.433L66.6684 26.1023L66.6682 26.1018L63.9797 27.433ZM62.5205 24.4859L59.8317 25.8164L59.832 25.8171L62.5205 24.4859ZM62.5205 24.3121L59.832 22.981L59.8317 22.9816L62.5205 24.3121ZM63.9407 21.4438L61.2532 20.1106L61.2522 20.1126L63.9407 21.4438ZM63.8482 21.2852L63.6982 24.2815L63.6989 24.2815L63.8482 21.2852ZM61.402 21.1628L61.5519 18.1665L61.5493 18.1664L61.402 21.1628ZM61.3856 21.1633L61.7028 24.1465L61.7154 24.1452L61.7279 24.1438L61.3856 21.1633ZM56.7794 21.6531L56.4622 18.6699L56.4483 18.6714L56.7794 21.6531ZM56.7566 21.6532L56.4528 24.6378L56.4617 24.6387L56.7566 21.6532ZM52.1655 21.1858L51.8543 24.1696L51.8617 24.1703L52.1655 21.1858ZM52.1202 21.1906L51.1881 18.3391L51.188 18.3392L52.1202 21.1906ZM49.8756 21.9245L48.9433 19.073L48.9405 19.0739L49.8756 21.9245ZM49.7872 21.9156L48.3051 24.5239L48.3056 24.5242L49.7872 21.9156ZM47.557 20.6484L46.0746 23.2566L46.0749 23.2567L47.557 20.6484ZM47.4712 20.6386L48.3315 23.5126L48.3349 23.5116L47.4712 20.6386ZM45.2185 21.313L46.0733 24.1886L46.0788 24.187L45.2185 21.313ZM45.1865 21.3176L45.2125 18.3177L45.2044 18.3176L45.1962 18.3176L45.1865 21.3176ZM35.9485 21.2876H32.9485V24.2779L35.9388 24.2876L35.9485 21.2876ZM35.9485 21.2779H38.9485L32.9487 21.2479L35.9485 21.2779ZM35.9484 21.2876L35.9387 24.2876L38.9184 24.2973L38.9483 21.3177L35.9484 21.2876ZM38.6974 22.2028C38.8593 21.6974 38.9485 21.1618 38.9485 20.607H32.9485C32.9485 20.5144 32.964 20.4331 32.9836 20.3717L38.6974 22.2028ZM38.9485 20.607C38.9485 17.4605 36.3127 15.5624 34.285 14.6259C32.0033 13.572 29.0619 13.0001 25.9742 13.0001V19.0001C28.3952 19.0001 30.441 19.4595 31.7692 20.0729C33.3515 20.8038 32.9485 21.2092 32.9485 20.607H38.9485ZM25.9742 13.0001C22.8866 13.0001 19.9452 13.572 17.6635 14.6259C15.6358 15.5624 13 17.4605 13 20.607H19C19 21.2092 18.597 20.8038 20.1793 20.0729C21.5075 19.4595 23.5533 19.0001 25.9742 19.0001V13.0001ZM13 20.607C13 21.6458 13.3108 22.5851 13.7861 23.3789L18.9338 20.2966C18.9343 20.2974 18.9519 20.3272 18.9692 20.3858C18.987 20.4461 19 20.5223 19 20.607H13ZM13 21.2779C13 22.8698 14.0152 23.8399 14.5897 24.2598L18.1301 19.4157C18.2383 19.4947 19 20.0916 19 21.2779H13ZM19 58.7218V21.2779H13V58.7218H19ZM25.9742 60.3287C23.5533 60.3287 21.5075 59.8693 20.1793 59.2559C18.597 58.525 19 58.1197 19 58.7218H13C13 61.8683 15.6358 63.7664 17.6634 64.7029C19.9452 65.7568 22.8865 66.3287 25.9742 66.3287V60.3287ZM32.9485 58.7218C32.9485 58.1197 33.3515 58.525 31.7692 59.2559C30.441 59.8693 28.3952 60.3287 25.9742 60.3287V66.3287C29.062 66.3287 32.0033 65.7568 34.2851 64.7029C36.3127 63.7664 38.9485 61.8683 38.9485 58.7218H32.9485ZM32.9485 58.7203V58.7218H38.9485V58.7203H32.9485ZM38.9394 58.4871L38.9393 58.4853L32.9577 58.9553L32.9579 58.9571L38.9394 58.4871ZM40.7446 56.0129L36.1338 55.7278L35.7635 61.7164L40.3743 62.0015L40.7446 56.0129ZM40.4903 56.0084C40.5753 56.0062 40.6629 56.0077 40.7527 56.0135L40.3662 62.001C40.4624 62.0072 40.5563 62.0088 40.6478 62.0064L40.4903 56.0084ZM39.9523 56.0734C40.1232 56.0362 40.3027 56.0135 40.4884 56.0085L40.6497 62.0063C40.8493 62.001 41.0426 61.9765 41.2271 61.9364L39.9523 56.0734ZM42.2306 55.575L39.9487 56.0742L41.2308 61.9356L43.5127 61.4365L42.2306 55.575ZM43.1623 55.5147C42.8431 55.4872 42.5301 55.5099 42.2338 55.5743L43.5094 61.4372C43.2347 61.4969 42.9438 61.5182 42.6464 61.4925L43.1623 55.5147ZM47.7668 55.905L43.1577 55.5143L42.651 61.4929L47.2601 61.8835L47.7668 55.905ZM52.3145 56.2049L47.7112 55.9008L47.3157 61.8877L51.919 62.1919L52.3145 56.2049ZM51.1405 56.3711C51.5163 56.2351 51.9181 56.1779 52.3205 56.2053L51.913 62.1915C52.3458 62.2209 52.778 62.1594 53.1823 62.0131L51.1405 56.3711ZM53.4074 55.5514L51.1411 56.3709L53.1817 62.0133L55.4479 61.1937L53.4074 55.5514ZM54.8908 55.3953C54.382 55.3249 53.8754 55.3831 53.413 55.5493L55.4423 61.1957C55.0132 61.3499 54.5424 61.4042 54.0689 61.3387L54.8908 55.3953ZM57.1708 55.7055L54.8842 55.3944L54.0754 61.3396L56.362 61.6507L57.1708 55.7055ZM61.7452 56.2829L57.1422 55.7017L56.3906 61.6544L60.9936 62.2356L61.7452 56.2829ZM60.5049 56.3968C60.9126 56.2667 61.3345 56.2317 61.74 56.2822L60.9988 62.2362C61.436 62.2907 61.8902 62.2528 62.3285 62.113L60.5049 56.3968ZM62.8597 55.6444L60.5036 56.3972L62.3297 62.1126L64.6859 61.3598L62.8597 55.6444ZM61.1487 59.6785C60.367 58.0977 61.1711 56.1826 62.8619 55.6437L64.6837 61.3605C66.5028 60.7808 67.3684 58.7201 66.527 57.0188L61.1487 59.6785ZM59.8323 57.0206L61.1495 59.6801L66.5262 57.0172L65.209 54.3577L59.8323 57.0206ZM59.8326 54.1825C59.3884 55.0786 59.3895 56.1303 59.8346 57.0253L65.2067 54.353C65.5971 55.1379 65.5982 56.061 65.2084 56.8474L59.8326 54.1825ZM61.2914 51.2372L59.8321 54.1835L65.2088 56.8464L66.6681 53.9001L61.2914 51.2372ZM61.291 53.7255C60.903 52.9417 60.9031 52.0218 61.2909 51.2381L66.6685 53.8993C67.1105 53.006 67.1106 51.9575 66.6684 51.0642L61.291 53.7255ZM59.8321 50.7798L61.2913 53.7262L66.6681 51.0635L65.2089 48.117L59.8321 50.7798ZM59.8317 47.944C59.3897 48.8373 59.3897 49.8857 59.8317 50.7789L65.2093 48.1178C65.5971 48.9016 65.5971 49.8214 65.2093 50.6051L59.8317 47.944ZM61.2913 44.9967L59.8321 47.9432L65.2089 50.606L66.6681 47.6595L61.2913 44.9967ZM61.291 47.4849C60.9031 46.7011 60.903 45.7813 61.291 44.9974L66.6684 47.6588C67.1106 46.7654 67.1105 45.7169 66.6685 44.8236L61.291 47.4849ZM59.8323 44.5398L61.2914 47.4858L66.668 44.8228L65.2089 41.8768L59.8323 44.5398ZM59.8309 41.7057C59.3904 42.5973 59.3894 43.6448 59.8318 44.5388L65.2094 41.8778C65.5976 42.6622 65.5966 43.5811 65.2103 44.3631L59.8309 41.7057ZM61.2914 38.7568L59.8322 41.7029L65.2089 44.3658L66.6681 41.4198L61.2914 38.7568ZM61.291 41.2451C60.9031 40.4613 60.9031 39.5414 61.291 38.7576L66.6685 41.4189C67.1106 40.5256 67.1106 39.4771 66.6685 38.5838L61.291 41.2451ZM59.8321 38.2994L61.2913 41.2459L66.6681 38.5831L65.2089 35.6366L59.8321 38.2994ZM59.8317 35.4637C59.3897 36.3569 59.3897 37.4053 59.8317 38.2985L65.2093 35.6375C65.5971 36.4212 65.5971 37.341 65.2093 38.1247L59.8317 35.4637ZM61.2913 32.5163L59.8321 35.4628L65.2089 38.1256L66.6681 35.179L61.2913 32.5163ZM61.291 35.0045C60.9031 34.2207 60.9031 33.3008 61.291 32.517L66.6685 35.1783C67.1106 34.285 67.1106 33.2365 66.6685 32.3432L61.291 35.0045ZM59.8321 32.0585L61.2913 35.0051L66.6681 32.3425L65.2089 29.3958L59.8321 32.0585ZM59.8317 29.2228C59.3897 30.1161 59.3897 31.1644 59.8317 32.0577L65.2093 29.3966C65.5971 30.1804 65.5971 31.1001 65.2093 31.8838L59.8317 29.2228ZM61.2913 26.2754L59.8321 29.222L65.2089 31.8847L66.6681 28.9382L61.2913 26.2754ZM61.291 28.7636C60.903 27.9798 60.903 27.0599 61.291 26.2761L66.6684 28.9375C67.1106 28.0441 67.1106 26.9956 66.6684 26.1023L61.291 28.7636ZM59.832 25.8171L61.2912 28.7642L66.6682 26.1018L65.209 23.1547L59.832 25.8171ZM59.8317 22.9816C59.3897 23.8749 59.3897 24.9232 59.8317 25.8164L65.2093 23.1554C65.5971 23.9392 65.5971 24.8589 65.2093 25.6426L59.8317 22.9816ZM61.2522 20.1126L59.832 22.981L65.209 25.6433L66.6292 22.7749L61.2522 20.1126ZM63.6989 24.2815C61.6005 24.177 60.3364 21.9589 61.2532 20.1106L66.6282 22.7769C67.6154 20.7868 66.2539 18.4014 63.9975 18.2889L63.6989 24.2815ZM61.252 24.159L63.6982 24.2815L63.9982 18.289L61.5519 18.1665L61.252 24.159ZM61.7279 24.1438C61.6651 24.151 61.5881 24.1577 61.4999 24.1608C61.411 24.164 61.3288 24.1628 61.2546 24.1592L61.5493 18.1664C61.3693 18.1576 61.2003 18.1649 61.0434 18.1829L61.7279 24.1438ZM57.0966 24.6363L61.7028 24.1465L61.0685 18.1802L56.4622 18.6699L57.0966 24.6363ZM56.4617 24.6387C56.6654 24.6588 56.8832 24.66 57.1106 24.6348L56.4483 18.6714C56.6604 18.6479 56.8631 18.6491 57.0516 18.6677L56.4617 24.6387ZM51.8617 24.1703L56.4528 24.6378L57.0605 18.6686L52.4694 18.2012L51.8617 24.1703ZM53.0524 24.0421C52.6734 24.166 52.2654 24.2124 51.8543 24.1696L52.4768 18.2019C52.0351 18.1559 51.5963 18.2057 51.1881 18.3391L53.0524 24.0421ZM50.8079 24.776L53.0525 24.0421L51.188 18.3392L48.9433 19.073L50.8079 24.776ZM48.3056 24.5242C49.0639 24.9549 49.9732 25.0498 50.8106 24.7751L48.9405 19.0739C49.7191 18.8186 50.5642 18.9068 51.2688 19.307L48.3056 24.5242ZM46.0749 23.2567L48.3051 24.5239L51.2692 19.3073L49.039 18.04L46.0749 23.2567ZM48.3349 23.5116C47.5737 23.7404 46.7574 23.6446 46.0746 23.2566L49.0393 18.0402C48.3044 17.6225 47.426 17.5196 46.6074 17.7657L48.3349 23.5116ZM46.0788 24.187L48.3315 23.5126L46.6109 17.7646L44.3581 18.439L46.0788 24.187ZM45.1605 24.3175C45.4838 24.3203 45.7912 24.2725 46.0733 24.1886L44.3636 18.4374C44.6249 18.3597 44.9108 18.3151 45.2125 18.3177L45.1605 24.3175ZM35.9388 24.2876L45.1768 24.3176L45.1962 18.3176L35.9582 18.2876L35.9388 24.2876ZM32.9485 21.2779V21.2876H38.9485V21.2779H32.9485ZM38.9483 21.3177L38.9483 21.308L32.9487 21.2479L32.9486 21.2576L38.9483 21.3177ZM35.8308 24.2873L35.9387 24.2876L35.9581 18.2876L35.8502 18.2873L35.8308 24.2873Z" fill="white" mask="url(#path-2-outside-1_8723_2324)"></path><path d="M62.5194 55.5149L63.9786 52.5686C64.0057 52.5139 64.0057 52.4496 63.9786 52.3948L62.5194 49.4483C62.4923 49.3936 62.4923 49.3293 62.5194 49.2745L63.9786 46.3281C64.0057 46.2733 64.0057 46.209 63.9786 46.1543L62.5195 43.2082C62.4924 43.1535 62.4924 43.0892 62.5195 43.0343L63.9786 40.0882C64.0057 40.0335 64.0057 39.9692 63.9786 39.9144L62.5194 36.968C62.4923 36.9132 62.4923 36.8489 62.5194 36.7942L63.9786 33.8476C64.0057 33.7928 64.0057 33.7285 63.9786 33.6738L62.5194 30.7271C62.4923 30.6724 62.4923 30.6081 62.5194 30.5533L63.9786 27.6067C64.0057 27.552 64.0057 27.4877 63.9786 27.4329L62.5194 24.4859C62.4923 24.4312 62.4923 24.3668 62.5194 24.3121L63.9396 21.4437C63.9748 21.3728 63.9261 21.2891 63.8471 21.2852C63.2915 21.2573 61.5322 21.1693 61.4008 21.1627C61.3951 21.1625 61.3902 21.1627 61.3845 21.1633L56.7783 21.6531C56.7707 21.6539 56.7631 21.6539 56.7555 21.6532L52.1644 21.1857C52.1491 21.1841 52.1337 21.1858 52.1191 21.1906L49.8745 21.9245C49.845 21.9341 49.813 21.9308 49.7861 21.9156L47.5558 20.6483C47.5298 20.6335 47.4987 20.63 47.4701 20.6386L45.2173 21.3129C45.2069 21.316 45.1962 21.3176 45.1854 21.3175L33.0078 21.2781L35.9475 58.7221L40.5583 59.0072C40.5685 59.0078 40.5787 59.007 40.5886 59.0048L42.8705 58.5057C42.8813 58.5034 42.8923 58.5026 42.9032 58.5036L47.5123 58.8942L52.1157 59.1983C52.1308 59.1994 52.146 59.1972 52.1603 59.1921L54.4265 58.3725C54.4432 58.3665 54.4611 58.3645 54.4787 58.367L56.7653 58.678L61.3683 59.2592C61.3842 59.2612 61.4003 59.2598 61.4156 59.2549L63.7717 58.5021C63.8358 58.4816 63.8666 58.4089 63.8367 58.3486L62.5196 55.6891C62.4922 55.6341 62.4922 55.5698 62.5194 55.5149Z" fill="#D6D4D7"></path><path d="M16 58.7219C16 61.2662 20.4656 63.3288 25.9742 63.3288C31.4829 63.3288 35.9485 61.2662 35.9485 58.7219V21.278C35.9484 23.8223 16 23.8223 16 21.278V58.7219Z" fill="#C6C1C8"></path><path d="M20.4141 62.5474C21.2933 62.8205 22.2716 63.0306 23.3191 63.1639V25.7198C22.2716 25.5866 21.2933 25.3764 20.4141 25.1033V62.5474Z" fill="#DFDDE2"></path><path d="M26.3594 63.3254C26.8523 63.3168 27.3361 63.2917 27.8081 63.2512V25.8072C27.3361 25.8477 26.8523 25.8728 26.3594 25.8815V63.3254Z" fill="#AFAAB4"></path><path d="M38.9688 59.2187C41.2655 59.21 43.5194 59.1845 45.7188 59.1435V21.2499C43.5194 21.2909 41.2655 21.3164 38.9688 21.3252V59.2187Z" fill="#F1F1F4"></path><path d="M56.875 59.2187C57.9277 59.21 58.9607 59.1845 59.9688 59.1435V21.2499C58.9607 21.2909 57.9277 21.3164 56.875 21.3252V59.2187Z" fill="#F1F1F4"></path><path d="M25.9742 25.8849C31.4829 25.8849 35.9485 23.8224 35.9485 21.278C35.9485 18.7337 31.4829 16.6712 25.9742 16.6712C20.4656 16.6712 16 18.7337 16 21.278C16 23.8224 20.4656 25.8849 25.9742 25.8849Z" fill="#F1F1F4"></path><path d="M25.9761 23.4703C23.8845 23.4703 21.8898 23.1347 20.3595 22.5253C19.6997 22.2625 19.2451 21.9949 18.9416 21.7693C18.6132 21.5252 18.6132 21.0309 18.9416 20.7867C19.2451 20.5612 19.6997 20.2935 20.3596 20.0307C21.89 19.4213 23.8846 19.0857 25.9761 19.0857C28.0675 19.0857 30.0622 19.4213 31.5926 20.0307C32.2525 20.2935 32.7071 20.5612 33.0106 20.7868C33.339 21.0309 33.339 21.5252 33.0106 21.7694C32.7071 21.995 32.2526 22.2626 31.5927 22.5254C30.0623 23.1346 28.0676 23.4703 25.9761 23.4703Z" fill="#A298A5"></path></svg>			</div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-a4a4e1c elementor-widget elementor-widget-heading" data-id="a4a4e1c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Material Beragam Sesuai Kebutuhan</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-6a6aadb elementor-widget elementor-widget-text-editor" data-id="6a6aadb" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p style="text-align: left;">Dari bahan plastik putih hingga silver, kami siap memberikan rekomendasi terbaik untuk produkmu.</p>								</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-8173cc9 e-flex e-con-boxed e-con e-child" data-id="8173cc9" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+					</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-61496fb e-con-full e-flex e-con e-child" data-id="61496fb" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-e850d6d e-con-full e-flex e-con e-child" data-id="e850d6d" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-4881bf8 elementor-view-default elementor-widget elementor-widget-icon" data-id="4881bf8" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<svg xmlns="http://www.w3.org/2000/svg" width="81" height="80" viewBox="0 0 81 80" fill="none"><rect x="0.332031" width="80" height="80" rx="40" fill="white"></rect><path d="M41.463 10.7029L41.4617 10.7024C40.736 10.4346 39.9331 10.4334 39.206 10.7029C39.2058 10.703 39.2056 10.7031 39.2055 10.7031C39.2052 10.7032 39.2049 10.7033 39.2046 10.7034L17.6277 18.6904C17.6267 18.6908 17.6257 18.6911 17.6247 18.6915C16.3427 19.1622 15.5 20.3825 15.5 21.7393V40.4083C15.5 51.6508 21.5254 58.9196 27.4639 63.3223C33.3721 67.7026 39.2988 69.3379 39.5066 69.3925L39.5987 69.4166L39.693 69.429L40.1387 69.4873L40.3333 69.5128L40.528 69.4873L40.9737 69.429L41.068 69.4166L41.16 69.3925C41.368 69.3378 47.2947 67.7019 53.2028 63.3214C59.1413 58.9185 65.1667 51.6497 65.1667 40.4083V21.7393C65.1667 20.3831 64.3245 19.1627 63.0448 18.6917C63.0441 18.6914 63.0435 18.6912 63.0429 18.691L41.463 10.7029Z" fill="#FFBA32" stroke="white" stroke-width="3"></path><path d="M40.3307 55.1667C31.9681 55.1667 25.1641 48.3627 25.1641 40C25.1641 31.6373 31.9681 24.8333 40.3307 24.8333C48.6934 24.8333 55.4974 31.6373 55.4974 40C55.4974 48.3627 48.6934 55.1667 40.3307 55.1667Z" fill="#FAFAFA"></path><path d="M44.4167 46.4167C43.8193 46.4167 43.222 46.188 42.767 45.733L38.6837 41.6497C38.245 41.2133 38 40.6207 38 40V33.5833C38 32.293 39.0453 31.25 40.3333 31.25C41.6213 31.25 42.6667 32.293 42.6667 33.5833V39.034L46.0663 42.4337C46.9787 43.346 46.9787 44.8207 46.0663 45.733C45.6113 46.188 45.014 46.4167 44.4167 46.4167Z" fill="#0012FF"></path><path d="M40.3333 12H40.3217C40.1187 12.0023 39.9157 12.0373 39.7243 12.1097L18.141 20.099C17.455 20.351 17 21.0067 17 21.7393V40.4083C17 61.6487 39.6567 67.881 39.8877 67.9417L40.3333 68V55.1667C31.9707 55.1667 25.1667 48.3627 25.1667 40C25.1667 31.6373 31.9707 24.8333 40.3333 24.8333V12Z" fill="#FFA20A"></path><path d="M40.3307 24.8333C31.9681 24.8333 25.1641 31.6373 25.1641 40C25.1641 48.3627 31.9681 55.1667 40.3307 55.1667V43.2993L38.6811 41.6497C38.2424 41.2133 37.9974 40.6207 37.9974 40V33.5833C37.9974 32.293 39.0427 31.25 40.3307 31.25V24.8333Z" fill="#DADADA"></path><path d="M40.3333 31.25C39.0453 31.25 38 32.293 38 33.5833V40C38 40.6207 38.245 41.2133 38.6837 41.6497L40.3333 43.2993V31.25Z" fill="#0617CD"></path></svg>			</div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-01125b4 elementor-widget elementor-widget-heading" data-id="01125b4" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Kualitas Cetak Premium</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-c3be291 elementor-widget__width-inherit elementor-widget elementor-widget-text-editor" data-id="c3be291" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Menggunakan teknologi cetak modern dengan hasil warna tajam dan tahan lama.<br><br></p>								</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-51f9912 e-flex e-con-boxed e-con e-child" data-id="51f9912" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+					</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-d7f84d5 e-con-full e-flex e-con e-child" data-id="d7f84d5" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-fdf85c0 e-con-full e-flex e-con e-child" data-id="fdf85c0" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-39e9582 elementor-view-default elementor-widget elementor-widget-icon" data-id="39e9582" data-element_type="widget" data-widget_type="icon.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-wrapper">
+			<div class="elementor-icon">
+			<svg xmlns="http://www.w3.org/2000/svg" width="81" height="80" viewBox="0 0 81 80" fill="none"><rect x="0.667969" width="80" height="80" rx="40" fill="white"></rect><mask id="path-2-outside-1_8723_2322" maskUnits="userSpaceOnUse" x="9.66797" y="17.7747" width="63" height="45" fill="black"><rect fill="white" x="9.66797" y="17.7747" width="63" height="45"></rect><path fill-rule="evenodd" clip-rule="evenodd" d="M29.4679 31.9149L25.4468 21.8405C25.19 21.1971 24.5641 20.7747 23.8681 20.7747C23.1719 20.7747 22.546 21.1971 22.2893 21.8406L13.461 43.9585C12.0874 47.4 12.516 51.2831 14.6079 54.3457C16.6948 57.4012 20.1566 59.2253 23.8681 59.2253C25.8654 59.2253 27.7905 58.697 29.4678 57.7327C31.1452 58.6971 33.0704 59.2254 35.0679 59.2254C37.0655 59.2254 38.9907 58.697 40.6681 57.7325C42.3457 58.697 44.2709 59.2254 46.2685 59.2254C48.2659 59.2254 50.191 58.6971 51.8684 57.7328C53.5458 58.6971 55.4709 59.2254 57.4683 59.2254C61.1797 59.2254 64.6414 57.4013 66.7283 54.3458C68.82 51.2833 69.2488 47.4003 67.8751 43.9585L59.0468 21.8405C58.79 21.1971 58.1643 20.7747 57.4681 20.7747C56.7719 20.7747 56.1461 21.1971 55.8894 21.8406L51.8683 31.9152L47.847 21.8405C47.5902 21.1971 46.9645 20.7747 46.2683 20.7747C45.5721 20.7747 44.9463 21.1971 44.6896 21.8406L40.6683 31.9156L40.6072 31.7627V31.764L36.6464 21.8405C36.3895 21.1971 35.7637 20.7747 35.0676 20.7747C34.3714 20.7747 33.7456 21.1971 33.4889 21.8406L29.4679 31.9149Z"></path></mask><path fill-rule="evenodd" clip-rule="evenodd" d="M29.4679 31.9149L25.4468 21.8405C25.19 21.1971 24.5641 20.7747 23.8681 20.7747C23.1719 20.7747 22.546 21.1971 22.2893 21.8406L13.461 43.9585C12.0874 47.4 12.516 51.2831 14.6079 54.3457C16.6948 57.4012 20.1566 59.2253 23.8681 59.2253C25.8654 59.2253 27.7905 58.697 29.4678 57.7327C31.1452 58.6971 33.0704 59.2254 35.0679 59.2254C37.0655 59.2254 38.9907 58.697 40.6681 57.7325C42.3457 58.697 44.2709 59.2254 46.2685 59.2254C48.2659 59.2254 50.191 58.6971 51.8684 57.7328C53.5458 58.6971 55.4709 59.2254 57.4683 59.2254C61.1797 59.2254 64.6414 57.4013 66.7283 54.3458C68.82 51.2833 69.2488 47.4003 67.8751 43.9585L59.0468 21.8405C58.79 21.1971 58.1643 20.7747 57.4681 20.7747C56.7719 20.7747 56.1461 21.1971 55.8894 21.8406L51.8683 31.9152L47.847 21.8405C47.5902 21.1971 46.9645 20.7747 46.2683 20.7747C45.5721 20.7747 44.9463 21.1971 44.6896 21.8406L40.6683 31.9156L40.6072 31.7627V31.764L36.6464 21.8405C36.3895 21.1971 35.7637 20.7747 35.0676 20.7747C34.3714 20.7747 33.7456 21.1971 33.4889 21.8406L29.4679 31.9149Z" fill="#31C9F7"></path><path d="M29.4679 31.9149L26.6816 33.027L29.4679 40.0077L32.2542 33.027L29.4679 31.9149ZM25.4468 21.8405L28.233 20.7284L28.233 20.7283L25.4468 21.8405ZM22.2893 21.8406L25.0756 22.9527L25.0758 22.9522L22.2893 21.8406ZM13.461 43.9585L10.6748 42.8463L10.6748 42.8464L13.461 43.9585ZM14.6079 54.3457L17.0853 52.6537L17.0852 52.6536L14.6079 54.3457ZM29.4678 57.7327L30.963 55.1319L29.4678 54.2723L27.9727 55.1319L29.4678 57.7327ZM40.6681 57.7325L42.1634 55.1317L40.6681 54.2721L39.1728 55.1318L40.6681 57.7325ZM51.8684 57.7328L53.3635 55.1319L51.8684 54.2724L50.3732 55.1319L51.8684 57.7328ZM66.7283 54.3458L69.2056 56.0378L69.2057 56.0378L66.7283 54.3458ZM67.8751 43.9585L70.6614 42.8464L70.6614 42.8463L67.8751 43.9585ZM59.0468 21.8405L61.8331 20.7283L61.833 20.7283L59.0468 21.8405ZM55.8894 21.8406L58.6757 22.9527L58.6758 22.9522L55.8894 21.8406ZM51.8683 31.9152L49.082 33.0273L51.8683 40.008L54.6545 33.0273L51.8683 31.9152ZM47.847 21.8405L50.6333 20.7284L50.6332 20.7283L47.847 21.8405ZM44.6896 21.8406L47.4759 22.9527L47.476 22.9522L44.6896 21.8406ZM40.6683 31.9156L37.882 33.0277L40.6683 40.0084L43.4545 33.0277L40.6683 31.9156ZM40.6072 31.7627L43.3935 30.6506L37.6072 31.7627H40.6072ZM40.6072 31.764L37.821 32.8761L43.6072 31.764H40.6072ZM36.6464 21.8405L39.4326 20.7284L39.4326 20.7283L36.6464 21.8405ZM33.4889 21.8406L36.2752 22.9527L36.2754 22.9522L33.4889 21.8406ZM32.2542 30.8028L28.233 20.7284L22.6605 22.9526L26.6816 33.027L32.2542 30.8028ZM28.233 20.7283C27.518 18.9372 25.7833 17.7747 23.8681 17.7747V23.7747C23.345 23.7747 22.8619 23.4571 22.6606 22.9527L28.233 20.7283ZM23.8681 17.7747C21.9528 17.7747 20.2177 18.9371 19.5029 20.7289L25.0758 22.9522C24.8744 23.4571 24.3909 23.7747 23.8681 23.7747V17.7747ZM19.5031 20.7285L10.6748 42.8463L16.2473 45.0706L25.0756 22.9527L19.5031 20.7285ZM10.6748 42.8464C8.93045 47.2167 9.47583 52.151 12.1307 56.0378L17.0852 52.6536C15.5563 50.4152 15.2444 47.5834 16.2473 45.0705L10.6748 42.8464ZM12.1306 56.0377C14.7786 59.9147 19.1692 62.2253 23.8681 62.2253V56.2253C21.1441 56.2253 18.6111 54.8877 17.0853 52.6537L12.1306 56.0377ZM23.8681 62.2253C26.3964 62.2253 28.8361 61.5562 30.963 60.3336L27.9727 55.1319C26.7448 55.8377 25.3345 56.2253 23.8681 56.2253V62.2253ZM27.9726 60.3336C30.0996 61.5563 32.5395 62.2254 35.0679 62.2254V56.2254C33.6014 56.2254 32.1909 55.8378 30.963 55.1319L27.9726 60.3336ZM35.0679 62.2254C37.5964 62.2254 40.0365 61.5562 42.1634 60.3333L39.1728 55.1318C37.9449 55.8378 36.5345 56.2254 35.0679 56.2254V62.2254ZM39.1729 60.3333C41.2999 61.5562 43.74 62.2254 46.2685 62.2254V56.2254C44.8019 56.2254 43.3914 55.8378 42.1634 55.1317L39.1729 60.3333ZM46.2685 62.2254C48.7969 62.2254 51.2367 61.5563 53.3636 60.3336L50.3732 55.1319C49.1453 55.8378 47.735 56.2254 46.2685 56.2254V62.2254ZM50.3732 60.3337C52.5001 61.5563 54.94 62.2254 57.4683 62.2254V56.2254C56.0019 56.2254 54.5915 55.8378 53.3635 55.1319L50.3732 60.3337ZM57.4683 62.2254C62.1673 62.2254 66.5576 59.9147 69.2056 56.0378L64.251 52.6537C62.7251 54.8878 60.1922 56.2254 57.4683 56.2254V62.2254ZM69.2057 56.0378C71.8602 52.1512 72.4057 47.217 70.6614 42.8464L65.0888 45.0705C66.0918 47.5836 65.7798 50.4154 64.251 52.6538L69.2057 56.0378ZM70.6614 42.8463L61.8331 20.7283L56.2606 22.9526L65.0889 45.0706L70.6614 42.8463ZM61.833 20.7283C61.1181 18.9373 59.3836 17.7747 57.4681 17.7747V23.7747C56.945 23.7747 56.4619 23.457 56.2606 22.9527L61.833 20.7283ZM57.4681 17.7747C55.5529 17.7747 53.8178 18.9371 53.103 20.7289L58.6758 22.9522C58.4744 23.4571 57.991 23.7747 57.4681 23.7747V17.7747ZM53.1031 20.7285L49.082 30.8031L54.6545 33.0273L58.6757 22.9527L53.1031 20.7285ZM54.6545 30.8031L50.6333 20.7284L45.0608 22.9526L49.082 33.0273L54.6545 30.8031ZM50.6332 20.7283C49.9183 18.9373 48.1838 17.7747 46.2683 17.7747V23.7747C45.7452 23.7747 45.2621 23.457 45.0608 22.9527L50.6332 20.7283ZM46.2683 17.7747C44.3531 17.7747 42.618 18.9371 41.9031 20.7289L47.476 22.9522C47.2746 23.4571 46.7912 23.7747 46.2683 23.7747V17.7747ZM41.9033 20.7285L37.882 30.8035L43.4545 33.0277L47.4759 22.9527L41.9033 20.7285ZM43.4545 30.8035L43.3935 30.6506L37.821 32.8748L37.882 33.0277L43.4545 30.8035ZM37.6072 31.7627V31.764H43.6072V31.7627H37.6072ZM43.3935 30.6519L39.4326 20.7284L33.8601 22.9526L37.821 32.8761L43.3935 30.6519ZM39.4326 20.7283C38.7176 18.9372 36.9829 17.7747 35.0676 17.7747V23.7747C34.5446 23.7747 34.0615 23.4571 33.8601 22.9527L39.4326 20.7283ZM35.0676 17.7747C33.1522 17.7747 31.4173 18.9372 30.7025 20.7289L36.2754 22.9522C36.074 23.457 35.5905 23.7747 35.0676 23.7747V17.7747ZM30.7027 20.7285L26.6816 30.8028L32.2542 33.027L36.2752 22.9527L30.7027 20.7285Z" fill="white" mask="url(#path-2-outside-1_8723_2322)"></path><path d="M67.8764 43.9584L59.0481 21.8404C58.7913 21.1971 58.1656 20.7747 57.4694 20.7747C56.7732 20.7747 56.1474 21.1971 55.8907 21.8405L47.0626 43.9585C45.689 47.4001 46.1176 51.2831 48.2095 54.3457C50.2964 57.4012 53.7582 59.2254 57.4696 59.2254C61.181 59.2254 64.6426 57.4012 66.7296 54.3457C68.8213 51.2833 69.25 47.4002 67.8764 43.9584Z" fill="#171A23"></path><path d="M56.6732 43.9584L47.845 21.8404C47.5882 21.1971 46.9624 20.7747 46.2663 20.7747C45.5701 20.7747 44.9443 21.1971 44.6876 21.8405L35.8595 43.9585C34.4858 47.4001 34.9145 51.2831 37.0064 54.3457C39.0933 57.4012 42.5551 59.2254 46.2665 59.2254C49.9779 59.2254 53.4395 57.4012 55.5265 54.3457C57.6182 51.2833 58.0469 47.4002 56.6732 43.9584Z" fill="#FCBE2D"></path><path d="M45.474 43.9584L36.6458 21.8404C36.389 21.1971 35.7631 20.7747 35.0671 20.7747C34.3708 20.7747 33.745 21.1971 33.4883 21.8405L24.6603 43.9585C23.2866 47.4001 23.7153 51.2831 25.8072 54.3457C27.894 57.4012 31.3559 59.2254 35.0673 59.2254C38.7787 59.2254 42.2403 57.4012 44.3273 54.3457C46.419 51.2833 46.8476 47.4002 45.474 43.9584Z" fill="#FE4FAE"></path><path d="M45.4733 43.9585L40.6055 31.7627V57.7672C42.0702 56.9374 43.349 55.7765 44.3264 54.3457C46.4183 51.2833 46.8469 47.4003 45.4733 43.9585Z" fill="#F900A0"></path><path d="M34.275 43.9584L25.4468 21.8404C25.19 21.1971 24.5641 20.7747 23.8681 20.7747C23.1719 20.7747 22.546 21.1971 22.2893 21.8405L13.461 43.9584C12.0874 47.4 12.516 51.283 14.6079 54.3456C16.6948 57.4011 20.1566 59.2253 23.8681 59.2253C27.5795 59.2253 31.0411 57.4011 33.1281 54.3456C35.2198 51.2833 35.6486 47.4002 34.275 43.9584Z" fill="#31C9F7"></path></svg>			</div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-2566dfc elementor-widget elementor-widget-heading" data-id="2566dfc" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Fleksibel Sesuai Kebutuhan</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-93f41d1 elementor-widget elementor-widget-text-editor" data-id="93f41d1" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>Mulai dari cetakan dalam jumlah kecil untuk uji coba produk hingga produksi besar untuk skala komersial.</p>								</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-22f49b2 e-flex e-con-boxed e-con e-child" data-id="22f49b2" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+					</div>
+				</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-7c6bb4fd e-flex e-con-boxed e-con e-parent" data-id="7c6bb4fd" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-ed7a6d8 elementor-widget elementor-widget-menu-anchor" data-id="ed7a6d8" data-element_type="widget" data-widget_type="menu-anchor.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-menu-anchor" id="product"></div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-aea3bf0 elementor-widget__width-inherit elementor-widget elementor-widget-shortcode" data-id="aea3bf0" data-element_type="widget" data-widget_type="shortcode.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-shortcode">		<div data-elementor-type="section" data-elementor-id="1936" class="elementor elementor-1936" data-elementor-post-type="elementor_library">
+			<div class="elementor-element elementor-element-fdfb610 e-flex e-con-boxed e-con e-parent" data-id="fdfb610" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-aca5aea elementor-widget elementor-widget-heading" data-id="aca5aea" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Pilihan Material untuk Packaging Anda</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-9eea63b elementor-widget elementor-widget-eael-adv-tabs" data-id="9eea63b" data-element_type="widget" data-widget_type="eael-adv-tabs.default">
+				<div class="elementor-widget-container">
+					        <div data-scroll-on-click="no" data-scroll-speed="300" id="eael-advance-tabs-9eea63b" class="eael-advance-tabs eael-tabs-horizontal eael-tab-auto-active  active-caret-on" data-tabid="9eea63b">
+            <div class="eael-tabs-nav ">
+                <ul class="" role="tablist">
+                                            <li id="label-film-white" class="inactive eael-tab-item-trigger eael-tab-nav-item" aria-selected="true" data-tab="1" role="tab" tabindex="0" aria-controls="label-film-white-tab" aria-expanded="false">
+                            
+                            
+                            
+                                                            <span class="eael-tab-title title-after-icon" >Label Film White</span>                                                    </li>
+                                            <li id="label-film-silver" class="inactive eael-tab-item-trigger eael-tab-nav-item" aria-selected="false" data-tab="2" role="tab" tabindex="-1" aria-controls="label-film-silver-tab" aria-expanded="false">
+                            
+                            
+                            
+                                                            <span class="eael-tab-title title-after-icon" >Label Film Silver</span>                                                    </li>
+                                            <li id="label-film-transparant" class="inactive eael-tab-item-trigger eael-tab-nav-item" aria-selected="false" data-tab="3" role="tab" tabindex="-1" aria-controls="label-film-transparant-tab" aria-expanded="false">
+                            
+                            
+                            
+                                                            <span class="eael-tab-title title-after-icon" >Label Film Transparant</span>                                                    </li>
+                    
+                                  </ul>
+            </div>
+            
+            <div class="eael-tabs-content">
+		        
+                    <div id="label-film-white-tab" class="clearfix eael-tab-content-item inactive" data-title-link="label-film-white-tab">
+				        <style>.elementor-1938 .elementor-element.elementor-element-ad33687{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--gap:32px 32px;--row-gap:32px;--column-gap:32px;--border-radius:12px 12px 12px 12px;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:12px;--padding-bottom:12px;--padding-left:12px;--padding-right:12px;}.elementor-1938 .elementor-element.elementor-element-85f5871{--display:flex;--flex-direction:row;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--align-items:flex-start;--border-radius:12px 12px 12px 12px;box-shadow:0px 0px 24px 4px rgba(0, 0, 0, 0.15);--padding-top:24px;--padding-bottom:24px;--padding-left:24px;--padding-right:24px;}.elementor-1938 .elementor-element.elementor-element-85f5871:not(.elementor-motion-effects-element-type-background), .elementor-1938 .elementor-element.elementor-element-85f5871 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:var( --e-global-color-bfde700 );}.elementor-widget-image .widget-image-caption{color:var( --e-global-color-text );font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-weight:var( --e-global-typography-text-font-weight );}.elementor-1938 .elementor-element.elementor-element-e88c785.elementor-element{--align-self:center;}.elementor-1938 .elementor-element.elementor-element-e88c785{text-align:left;}.elementor-1938 .elementor-element.elementor-element-e88c785 img{width:148px;height:130px;border-radius:200px 200px 200px 200px;}.elementor-1938 .elementor-element.elementor-element-325e687{--display:flex;--flex-direction:column;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--justify-content:center;--align-items:center;}.elementor-1938 .elementor-element.elementor-element-325e687.e-con{--align-self:center;}.elementor-widget-accordion .elementor-accordion-icon, .elementor-widget-accordion .elementor-accordion-title{color:var( --e-global-color-primary );}.elementor-widget-accordion .elementor-accordion-icon svg{fill:var( --e-global-color-primary );}.elementor-widget-accordion .elementor-active .elementor-accordion-icon, .elementor-widget-accordion .elementor-active .elementor-accordion-title{color:var( --e-global-color-accent );}.elementor-widget-accordion .elementor-active .elementor-accordion-icon svg{fill:var( --e-global-color-accent );}.elementor-widget-accordion .elementor-accordion-title{font-family:var( --e-global-typography-primary-font-family ), Sans-serif;font-weight:var( --e-global-typography-primary-font-weight );}.elementor-widget-accordion .elementor-tab-content{color:var( --e-global-color-text );font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-weight:var( --e-global-typography-text-font-weight );}.elementor-1938 .elementor-element.elementor-element-96e7e4a > .elementor-widget-container{padding:0px 0px 0px 0px;}.elementor-1938 .elementor-element.elementor-element-96e7e4a .elementor-accordion-item{border-width:0px;}.elementor-1938 .elementor-element.elementor-element-96e7e4a .elementor-accordion-item .elementor-tab-content{border-width:0px;}.elementor-1938 .elementor-element.elementor-element-96e7e4a .elementor-accordion-item .elementor-tab-title.elementor-active{border-width:0px;}.elementor-1938 .elementor-element.elementor-element-96e7e4a .elementor-accordion-icon, .elementor-1938 .elementor-element.elementor-element-96e7e4a .elementor-accordion-title{color:var( --e-global-color-ca66ea7 );}.elementor-1938 .elementor-element.elementor-element-96e7e4a .elementor-accordion-icon svg{fill:var( --e-global-color-ca66ea7 );}.elementor-1938 .elementor-element.elementor-element-96e7e4a .elementor-active .elementor-accordion-icon, .elementor-1938 .elementor-element.elementor-element-96e7e4a .elementor-active .elementor-accordion-title{color:var( --e-global-color-01617fa );}.elementor-1938 .elementor-element.elementor-element-96e7e4a .elementor-active .elementor-accordion-icon svg{fill:var( --e-global-color-01617fa );}.elementor-1938 .elementor-element.elementor-element-96e7e4a .elementor-accordion-title{font-family:"Poppins", Sans-serif;font-size:24px;font-weight:600;line-height:31px;letter-spacing:-0.24px;}.elementor-1938 .elementor-element.elementor-element-96e7e4a .elementor-tab-title{padding:0px 0px 12px 0px;}.elementor-1938 .elementor-element.elementor-element-96e7e4a .elementor-accordion-icon.elementor-accordion-icon-left{margin-right:0px;}.elementor-1938 .elementor-element.elementor-element-96e7e4a .elementor-accordion-icon.elementor-accordion-icon-right{margin-left:0px;}.elementor-1938 .elementor-element.elementor-element-96e7e4a .elementor-tab-content{padding:0px 0px 0px 0px;}.elementor-widget-media-carousel .elementor-carousel-image-overlay{font-family:var( --e-global-typography-accent-font-family ), Sans-serif;font-weight:var( --e-global-typography-accent-font-weight );}.elementor-1938 .elementor-element.elementor-element-5ec6290.elementor-skin-slideshow .elementor-main-swiper{margin-bottom:0px;}.elementor-1938 .elementor-element.elementor-element-5ec6290 .elementor-main-swiper{height:400px;}.elementor-1938 .elementor-element.elementor-element-5ec6290 .elementor-main-swiper .swiper-slide{border-width:0px 0px 0px 0px;}.elementor-1938 .elementor-element.elementor-element-5ec6290 .elementor-swiper-button{font-size:20px;}.elementor-1938 .elementor-element.elementor-element-5ec6290 .swiper-pagination-bullet{height:4px;width:4px;}.elementor-1938 .elementor-element.elementor-element-5ec6290 .swiper-horizontal .swiper-pagination-progressbar{height:4px;}.elementor-1938 .elementor-element.elementor-element-5ec6290 .swiper-pagination-fraction{font-size:4px;}@media(max-width:1024px){.elementor-1938 .elementor-element.elementor-element-5ec6290.elementor-skin-slideshow .elementor-main-swiper{margin-bottom:10px;}}@media(max-width:767px){.elementor-1938 .elementor-element.elementor-element-ad33687{--padding-top:12px;--padding-bottom:12px;--padding-left:12px;--padding-right:12px;}.elementor-1938 .elementor-element.elementor-element-85f5871{--justify-content:center;--align-items:center;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--padding-top:12px;--padding-bottom:12px;--padding-left:12px;--padding-right:12px;}.elementor-1938 .elementor-element.elementor-element-e88c785 img{width:124px;height:124px;}.elementor-1938 .elementor-element.elementor-element-325e687{--padding-top:4px;--padding-bottom:4px;--padding-left:4px;--padding-right:4px;}.elementor-1938 .elementor-element.elementor-element-96e7e4a > .elementor-widget-container{padding:0px 0px 0px 0px;}.elementor-1938 .elementor-element.elementor-element-96e7e4a .elementor-accordion-title{font-size:20px;}.elementor-1938 .elementor-element.elementor-element-5ec6290.elementor-skin-slideshow .elementor-main-swiper{margin-bottom:10px;}}</style>		<div data-elementor-type="section" data-elementor-id="1938" class="elementor elementor-1938" data-elementor-post-type="elementor_library">
+			<div class="elementor-element elementor-element-ad33687 e-flex e-con-boxed e-con e-parent" data-id="ad33687" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-85f5871 e-con-full e-flex e-con e-child" data-id="85f5871" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-e88c785 elementor-widget elementor-widget-image" data-id="e88c785" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="eager" decoding="async" width="800" height="800" src="assets/070039499d81.jpg" class="attachment-large size-large wp-image-1582" alt="" srcset="assets/070039499d81.jpg 1000w, assets/504060eb4200.jpg 300w, assets/c7184762bbf5.jpg 150w, assets/0b50d13dd86d.jpg 768w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
+				</div>
+		<div class="elementor-element elementor-element-325e687 e-con-full e-flex e-con e-child" data-id="325e687" data-element_type="container">
+				<div class="elementor-element elementor-element-96e7e4a elementor-widget elementor-widget-accordion" data-id="96e7e4a" data-element_type="widget" data-widget_type="accordion.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-accordion">
+							<div class="elementor-accordion-item">
+					<div id="elementor-tab-title-1581" class="elementor-tab-title" data-tab="1" role="button" aria-controls="elementor-tab-content-1581" aria-expanded="false">
+													<span class="elementor-accordion-icon elementor-accordion-icon-right" aria-hidden="true">
+															<span class="elementor-accordion-icon-closed"><i class="fas fa-chevron-down"></i></span>
+								<span class="elementor-accordion-icon-opened"><i class="fas fa-minus"></i></span>
+														</span>
+												<a class="elementor-accordion-title" tabindex="0">Label Film White</a>
+					</div>
+					<div id="elementor-tab-content-1581" class="elementor-tab-content elementor-clearfix" data-tab="1" role="region" aria-labelledby="elementor-tab-title-1581"><p>Label serbaguna dengan tampilan putih bersih, cocok untuk berbagai kebutuhan percetakan umum. Solusi sempurna supaya informasi produkmu terlihat jelas dan tampak profesional.</p></div>
+				</div>
+										
+					</div>
+						</div>
+				</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-5ec6290 elementor-skin-carousel elementor-arrows-yes elementor-pagination-type-bullets elementor-pagination-position-outside elementor-widget elementor-widget-media-carousel" data-id="5ec6290" data-element_type="widget" data-settings="{&quot;slides_per_view&quot;:&quot;3&quot;,&quot;space_between&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0,&quot;sizes&quot;:[]},&quot;skin&quot;:&quot;carousel&quot;,&quot;effect&quot;:&quot;slide&quot;,&quot;show_arrows&quot;:&quot;yes&quot;,&quot;pagination&quot;:&quot;bullets&quot;,&quot;speed&quot;:500,&quot;autoplay&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;loop&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;space_between_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;space_between_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]}}" data-widget_type="media-carousel.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-swiper">
+			<div class="elementor-main-swiper swiper">
+				<div class="swiper-wrapper">
+											<div class="swiper-slide">
+									<div class="elementor-carousel-image" role="img" aria-label="Product podium display minimal for product backdrop. Background for banner, web, poster. 3d rendering." style="background-image: url(&#039;assets/8b0beff8a22f.jpg&#039;)">
+
+			
+					</div>
+								</div>
+											<div class="swiper-slide">
+									<div class="elementor-carousel-image" role="img" aria-label="kitalabel-embun-gel.jpg" style="background-image: url(&#039;assets/5ffec1d82b1b.jpg&#039;)">
+
+			
+					</div>
+								</div>
+											<div class="swiper-slide">
+									<div class="elementor-carousel-image" role="img" aria-label="After" style="background-image: url(&#039;assets/d16f66c9098f.png&#039;)">
+
+			
+					</div>
+								</div>
+											<div class="swiper-slide">
+									<div class="elementor-carousel-image" role="img" aria-label="kitalabel-embun-bali-coconut.jpg" style="background-image: url(&#039;assets/412ed6f15bc0.jpg&#039;)">
+
+			
+					</div>
+								</div>
+											<div class="swiper-slide">
+									<div class="elementor-carousel-image" role="img" aria-label="good-life-kombucha.jpg" style="background-image: url(&#039;assets/6ae7611d6144.jpg&#039;)">
+
+			
+					</div>
+								</div>
+									</div>
+															<div class="swiper-pagination"></div>
+																<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
+							<i aria-hidden="true" class="eicon-chevron-left"></i>							<span class="elementor-screen-only">Previous</span>
+						</div>
+						<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
+							<i aria-hidden="true" class="eicon-chevron-right"></i>							<span class="elementor-screen-only">Next</span>
+						</div>
+												</div>
+		</div>
+						</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		                    </div>
+		        
+                    <div id="label-film-silver-tab" class="clearfix eael-tab-content-item inactive" data-title-link="label-film-silver-tab">
+				        <style>.elementor-1943 .elementor-element.elementor-element-ad33687{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--gap:32px 32px;--row-gap:32px;--column-gap:32px;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:12px;--padding-bottom:12px;--padding-left:12px;--padding-right:12px;}.elementor-1943 .elementor-element.elementor-element-405756a{--display:flex;--flex-direction:row;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--align-items:flex-start;--border-radius:12px 12px 12px 12px;box-shadow:0px 0px 24px 4px rgba(0, 0, 0, 0.15);--padding-top:24px;--padding-bottom:24px;--padding-left:24px;--padding-right:24px;}.elementor-1943 .elementor-element.elementor-element-405756a:not(.elementor-motion-effects-element-type-background), .elementor-1943 .elementor-element.elementor-element-405756a > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:var( --e-global-color-bfde700 );}.elementor-widget-image .widget-image-caption{color:var( --e-global-color-text );font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-weight:var( --e-global-typography-text-font-weight );}.elementor-1943 .elementor-element.elementor-element-834ef01.elementor-element{--align-self:center;}.elementor-1943 .elementor-element.elementor-element-834ef01{text-align:center;}.elementor-1943 .elementor-element.elementor-element-834ef01 img{width:148px;height:130px;border-radius:200px 200px 200px 200px;}.elementor-1943 .elementor-element.elementor-element-a5666e5{--display:flex;--flex-direction:column;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--justify-content:center;--align-items:center;}.elementor-1943 .elementor-element.elementor-element-a5666e5.e-con{--align-self:center;}.elementor-widget-accordion .elementor-accordion-icon, .elementor-widget-accordion .elementor-accordion-title{color:var( --e-global-color-primary );}.elementor-widget-accordion .elementor-accordion-icon svg{fill:var( --e-global-color-primary );}.elementor-widget-accordion .elementor-active .elementor-accordion-icon, .elementor-widget-accordion .elementor-active .elementor-accordion-title{color:var( --e-global-color-accent );}.elementor-widget-accordion .elementor-active .elementor-accordion-icon svg{fill:var( --e-global-color-accent );}.elementor-widget-accordion .elementor-accordion-title{font-family:var( --e-global-typography-primary-font-family ), Sans-serif;font-weight:var( --e-global-typography-primary-font-weight );}.elementor-widget-accordion .elementor-tab-content{color:var( --e-global-color-text );font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-weight:var( --e-global-typography-text-font-weight );}.elementor-1943 .elementor-element.elementor-element-7013143.elementor-element{--align-self:center;}.elementor-1943 .elementor-element.elementor-element-7013143 .elementor-accordion-item{border-width:0px;}.elementor-1943 .elementor-element.elementor-element-7013143 .elementor-accordion-item .elementor-tab-content{border-width:0px;}.elementor-1943 .elementor-element.elementor-element-7013143 .elementor-accordion-item .elementor-tab-title.elementor-active{border-width:0px;}.elementor-1943 .elementor-element.elementor-element-7013143 .elementor-accordion-icon, .elementor-1943 .elementor-element.elementor-element-7013143 .elementor-accordion-title{color:var( --e-global-color-ca66ea7 );}.elementor-1943 .elementor-element.elementor-element-7013143 .elementor-accordion-icon svg{fill:var( --e-global-color-ca66ea7 );}.elementor-1943 .elementor-element.elementor-element-7013143 .elementor-active .elementor-accordion-icon, .elementor-1943 .elementor-element.elementor-element-7013143 .elementor-active .elementor-accordion-title{color:var( --e-global-color-01617fa );}.elementor-1943 .elementor-element.elementor-element-7013143 .elementor-active .elementor-accordion-icon svg{fill:var( --e-global-color-01617fa );}.elementor-1943 .elementor-element.elementor-element-7013143 .elementor-accordion-title{font-family:"Poppins", Sans-serif;font-size:24px;font-weight:600;line-height:31px;letter-spacing:-0.24px;}.elementor-1943 .elementor-element.elementor-element-7013143 .elementor-tab-title{padding:0px 0px 12px 0px;}.elementor-1943 .elementor-element.elementor-element-7013143 .elementor-accordion-icon.elementor-accordion-icon-left{margin-right:0px;}.elementor-1943 .elementor-element.elementor-element-7013143 .elementor-accordion-icon.elementor-accordion-icon-right{margin-left:0px;}.elementor-1943 .elementor-element.elementor-element-7013143 .elementor-tab-content{padding:0px 0px 0px 0px;}.elementor-widget-media-carousel .elementor-carousel-image-overlay{font-family:var( --e-global-typography-accent-font-family ), Sans-serif;font-weight:var( --e-global-typography-accent-font-weight );}.elementor-1943 .elementor-element.elementor-element-5ec6290.elementor-skin-slideshow .elementor-main-swiper{margin-bottom:0px;}.elementor-1943 .elementor-element.elementor-element-5ec6290 .elementor-main-swiper{height:400px;}.elementor-1943 .elementor-element.elementor-element-5ec6290 .elementor-main-swiper .swiper-slide{border-width:0px 0px 0px 0px;}.elementor-1943 .elementor-element.elementor-element-5ec6290 .elementor-swiper-button{font-size:20px;}.elementor-1943 .elementor-element.elementor-element-5ec6290 .swiper-pagination-bullet{height:4px;width:4px;}.elementor-1943 .elementor-element.elementor-element-5ec6290 .swiper-horizontal .swiper-pagination-progressbar{height:4px;}.elementor-1943 .elementor-element.elementor-element-5ec6290 .swiper-pagination-fraction{font-size:4px;}@media(max-width:1024px){.elementor-1943 .elementor-element.elementor-element-5ec6290.elementor-skin-slideshow .elementor-main-swiper{margin-bottom:10px;}}@media(max-width:767px){.elementor-1943 .elementor-element.elementor-element-405756a{--justify-content:center;--padding-top:12px;--padding-bottom:12px;--padding-left:12px;--padding-right:12px;}.elementor-1943 .elementor-element.elementor-element-834ef01 img{width:124px;height:124px;}.elementor-1943 .elementor-element.elementor-element-a5666e5{--padding-top:4px;--padding-bottom:4px;--padding-left:4px;--padding-right:4px;}.elementor-1943 .elementor-element.elementor-element-7013143 .elementor-accordion-title{font-size:20px;}.elementor-1943 .elementor-element.elementor-element-5ec6290.elementor-skin-slideshow .elementor-main-swiper{margin-bottom:10px;}}</style>		<div data-elementor-type="section" data-elementor-id="1943" class="elementor elementor-1943" data-elementor-post-type="elementor_library">
+			<div class="elementor-element elementor-element-ad33687 e-flex e-con-boxed e-con e-parent" data-id="ad33687" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-405756a e-con-full e-flex e-con e-child" data-id="405756a" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-834ef01 elementor-widget elementor-widget-image" data-id="834ef01" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="eager" decoding="async" width="800" height="800" src="assets/4fcab45040df.jpg" class="attachment-large size-large wp-image-1580" alt="" srcset="assets/4fcab45040df.jpg 1000w, assets/26addc905455.jpg 300w, assets/1e9daa1418cd.jpg 150w, assets/9a7a32d09c9c.jpg 768w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
+				</div>
+		<div class="elementor-element elementor-element-a5666e5 e-con-full e-flex e-con e-child" data-id="a5666e5" data-element_type="container">
+				<div class="elementor-element elementor-element-7013143 elementor-widget elementor-widget-accordion" data-id="7013143" data-element_type="widget" data-widget_type="accordion.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-accordion">
+							<div class="elementor-accordion-item">
+					<div id="elementor-tab-title-1171" class="elementor-tab-title" data-tab="1" role="button" aria-controls="elementor-tab-content-1171" aria-expanded="false">
+													<span class="elementor-accordion-icon elementor-accordion-icon-right" aria-hidden="true">
+															<span class="elementor-accordion-icon-closed"><i class="fas fa-chevron-down"></i></span>
+								<span class="elementor-accordion-icon-opened"><i class="fas fa-minus"></i></span>
+														</span>
+												<a class="elementor-accordion-title" tabindex="0">Label Film Silver</a>
+					</div>
+					<div id="elementor-tab-content-1171" class="elementor-tab-content elementor-clearfix" data-tab="1" role="region" aria-labelledby="elementor-tab-title-1171"><p>Label dengan tampilan perak mengkilap yang elegan, memberikan kesan premium pada produkmu. Sempurna untuk kemasan yang mau kamu tonjolin dan ninggalin kesan mewah buat konsumenmu.</p></div>
+				</div>
+										
+					</div>
+						</div>
+				</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-5ec6290 elementor-skin-carousel elementor-arrows-yes elementor-pagination-type-bullets elementor-pagination-position-outside elementor-widget elementor-widget-media-carousel" data-id="5ec6290" data-element_type="widget" data-settings="{&quot;slides_per_view&quot;:&quot;3&quot;,&quot;space_between&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0,&quot;sizes&quot;:[]},&quot;lazyload&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:3000,&quot;skin&quot;:&quot;carousel&quot;,&quot;effect&quot;:&quot;slide&quot;,&quot;show_arrows&quot;:&quot;yes&quot;,&quot;pagination&quot;:&quot;bullets&quot;,&quot;speed&quot;:500,&quot;autoplay&quot;:&quot;yes&quot;,&quot;loop&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;space_between_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;space_between_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]}}" data-widget_type="media-carousel.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-swiper">
+			<div class="elementor-main-swiper swiper">
+				<div class="swiper-wrapper">
+											<div class="swiper-slide">
+									<div class="elementor-carousel-image swiper-lazy" role="img" aria-label="Thmbnail-porto-kosmetic-01" data-background="assets/08dc5fe912b4.jpg">
+
+							<div class="swiper-lazy-preloader"></div>
+			
+					</div>
+								</div>
+											<div class="swiper-slide">
+									<div class="elementor-carousel-image swiper-lazy" role="img" aria-label="Thmbnail-porto-barcode-05" data-background="assets/238586b06afc.png">
+
+							<div class="swiper-lazy-preloader"></div>
+			
+					</div>
+								</div>
+											<div class="swiper-slide">
+									<div class="elementor-carousel-image swiper-lazy" role="img" aria-label="Thmbnail-porto-snack-01" data-background="assets/d2138f2c5165.jpg">
+
+							<div class="swiper-lazy-preloader"></div>
+			
+					</div>
+								</div>
+											<div class="swiper-slide">
+									<div class="elementor-carousel-image swiper-lazy" role="img" aria-label="Thmbnail-porto-parfum-02" data-background="assets/69257eb566b6.png">
+
+							<div class="swiper-lazy-preloader"></div>
+			
+					</div>
+								</div>
+											<div class="swiper-slide">
+									<div class="elementor-carousel-image swiper-lazy" role="img" aria-label="Thmbnail-porto-snack-02" data-background="assets/6408655cc938.jpg">
+
+							<div class="swiper-lazy-preloader"></div>
+			
+					</div>
+								</div>
+									</div>
+															<div class="swiper-pagination"></div>
+																<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
+							<i aria-hidden="true" class="eicon-chevron-left"></i>							<span class="elementor-screen-only">Previous</span>
+						</div>
+						<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
+							<i aria-hidden="true" class="eicon-chevron-right"></i>							<span class="elementor-screen-only">Next</span>
+						</div>
+												</div>
+		</div>
+						</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		                    </div>
+		        
+                    <div id="label-film-transparant-tab" class="clearfix eael-tab-content-item inactive" data-title-link="label-film-transparant-tab">
+				        <style>.elementor-1950 .elementor-element.elementor-element-ad33687{--display:flex;--flex-direction:column;--container-widget-width:100%;--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--gap:32px 32px;--row-gap:32px;--column-gap:32px;--margin-top:0px;--margin-bottom:0px;--margin-left:0px;--margin-right:0px;--padding-top:12px;--padding-bottom:12px;--padding-left:12px;--padding-right:12px;}.elementor-1950 .elementor-element.elementor-element-55e7a66{--display:flex;--flex-direction:row;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:100%;--container-widget-flex-grow:1;--container-widget-align-self:stretch;--flex-wrap-mobile:wrap;--align-items:flex-start;--border-radius:12px 12px 12px 12px;box-shadow:0px 0px 24px 4px rgba(0, 0, 0, 0.15);--padding-top:24px;--padding-bottom:24px;--padding-left:24px;--padding-right:24px;}.elementor-1950 .elementor-element.elementor-element-55e7a66:not(.elementor-motion-effects-element-type-background), .elementor-1950 .elementor-element.elementor-element-55e7a66 > .elementor-motion-effects-container > .elementor-motion-effects-layer{background-color:var( --e-global-color-bfde700 );}.elementor-widget-image .widget-image-caption{color:var( --e-global-color-text );font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-weight:var( --e-global-typography-text-font-weight );}.elementor-1950 .elementor-element.elementor-element-c8411e0.elementor-element{--align-self:center;}.elementor-1950 .elementor-element.elementor-element-c8411e0{text-align:center;}.elementor-1950 .elementor-element.elementor-element-c8411e0 img{width:148px;height:130px;border-radius:200px 200px 200px 200px;}.elementor-1950 .elementor-element.elementor-element-ef1c17a{--display:flex;--flex-direction:column;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--container-widget-height:initial;--container-widget-flex-grow:0;--container-widget-align-self:initial;--flex-wrap-mobile:wrap;--justify-content:center;--align-items:center;}.elementor-1950 .elementor-element.elementor-element-ef1c17a.e-con{--align-self:center;}.elementor-widget-accordion .elementor-accordion-icon, .elementor-widget-accordion .elementor-accordion-title{color:var( --e-global-color-primary );}.elementor-widget-accordion .elementor-accordion-icon svg{fill:var( --e-global-color-primary );}.elementor-widget-accordion .elementor-active .elementor-accordion-icon, .elementor-widget-accordion .elementor-active .elementor-accordion-title{color:var( --e-global-color-accent );}.elementor-widget-accordion .elementor-active .elementor-accordion-icon svg{fill:var( --e-global-color-accent );}.elementor-widget-accordion .elementor-accordion-title{font-family:var( --e-global-typography-primary-font-family ), Sans-serif;font-weight:var( --e-global-typography-primary-font-weight );}.elementor-widget-accordion .elementor-tab-content{color:var( --e-global-color-text );font-family:var( --e-global-typography-text-font-family ), Sans-serif;font-weight:var( --e-global-typography-text-font-weight );}.elementor-1950 .elementor-element.elementor-element-bbb46a7 .elementor-accordion-item{border-width:0px;}.elementor-1950 .elementor-element.elementor-element-bbb46a7 .elementor-accordion-item .elementor-tab-content{border-width:0px;}.elementor-1950 .elementor-element.elementor-element-bbb46a7 .elementor-accordion-item .elementor-tab-title.elementor-active{border-width:0px;}.elementor-1950 .elementor-element.elementor-element-bbb46a7 .elementor-accordion-icon, .elementor-1950 .elementor-element.elementor-element-bbb46a7 .elementor-accordion-title{color:var( --e-global-color-ca66ea7 );}.elementor-1950 .elementor-element.elementor-element-bbb46a7 .elementor-accordion-icon svg{fill:var( --e-global-color-ca66ea7 );}.elementor-1950 .elementor-element.elementor-element-bbb46a7 .elementor-active .elementor-accordion-icon, .elementor-1950 .elementor-element.elementor-element-bbb46a7 .elementor-active .elementor-accordion-title{color:var( --e-global-color-01617fa );}.elementor-1950 .elementor-element.elementor-element-bbb46a7 .elementor-active .elementor-accordion-icon svg{fill:var( --e-global-color-01617fa );}.elementor-1950 .elementor-element.elementor-element-bbb46a7 .elementor-accordion-title{font-family:"Poppins", Sans-serif;font-size:24px;font-weight:600;line-height:31px;letter-spacing:-0.24px;}.elementor-1950 .elementor-element.elementor-element-bbb46a7 .elementor-tab-title{padding:0px 0px 12px 0px;}.elementor-1950 .elementor-element.elementor-element-bbb46a7 .elementor-accordion-icon.elementor-accordion-icon-left{margin-right:0px;}.elementor-1950 .elementor-element.elementor-element-bbb46a7 .elementor-accordion-icon.elementor-accordion-icon-right{margin-left:0px;}.elementor-1950 .elementor-element.elementor-element-bbb46a7 .elementor-tab-content{padding:0px 0px 0px 0px;}.elementor-widget-media-carousel .elementor-carousel-image-overlay{font-family:var( --e-global-typography-accent-font-family ), Sans-serif;font-weight:var( --e-global-typography-accent-font-weight );}.elementor-1950 .elementor-element.elementor-element-5ec6290.elementor-skin-slideshow .elementor-main-swiper{margin-bottom:0px;}.elementor-1950 .elementor-element.elementor-element-5ec6290 .elementor-main-swiper{height:400px;}.elementor-1950 .elementor-element.elementor-element-5ec6290 .elementor-main-swiper .swiper-slide{border-width:0px 0px 0px 0px;}.elementor-1950 .elementor-element.elementor-element-5ec6290 .elementor-swiper-button{font-size:20px;}.elementor-1950 .elementor-element.elementor-element-5ec6290 .swiper-pagination-bullet{height:4px;width:4px;}.elementor-1950 .elementor-element.elementor-element-5ec6290 .swiper-horizontal .swiper-pagination-progressbar{height:4px;}.elementor-1950 .elementor-element.elementor-element-5ec6290 .swiper-pagination-fraction{font-size:4px;}@media(max-width:1024px){.elementor-1950 .elementor-element.elementor-element-5ec6290.elementor-skin-slideshow .elementor-main-swiper{margin-bottom:10px;}}@media(max-width:767px){.elementor-1950 .elementor-element.elementor-element-55e7a66{--justify-content:center;--align-items:center;--container-widget-width:calc( ( 1 - var( --container-widget-flex-grow ) ) * 100% );--padding-top:12px;--padding-bottom:12px;--padding-left:12px;--padding-right:12px;}.elementor-1950 .elementor-element.elementor-element-55e7a66.e-con{--align-self:center;}.elementor-1950 .elementor-element.elementor-element-c8411e0 img{width:125px;height:125px;}.elementor-1950 .elementor-element.elementor-element-ef1c17a{--padding-top:4px;--padding-bottom:4px;--padding-left:4px;--padding-right:4px;}.elementor-1950 .elementor-element.elementor-element-bbb46a7 .elementor-accordion-title{font-size:20px;}.elementor-1950 .elementor-element.elementor-element-5ec6290.elementor-skin-slideshow .elementor-main-swiper{margin-bottom:10px;}}</style>		<div data-elementor-type="section" data-elementor-id="1950" class="elementor elementor-1950" data-elementor-post-type="elementor_library">
+			<div class="elementor-element elementor-element-ad33687 e-flex e-con-boxed e-con e-parent" data-id="ad33687" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-55e7a66 e-con-full e-flex e-con e-child" data-id="55e7a66" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-c8411e0 elementor-widget elementor-widget-image" data-id="c8411e0" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="eager" decoding="async" width="800" height="800" src="assets/00958667e0be.jpg" class="attachment-large size-large wp-image-1581" alt="" srcset="assets/00958667e0be.jpg 1000w, assets/fb9f88bcbcfd.jpg 300w, assets/4defaaf12f10.jpg 150w, assets/92dc6bec4150.jpg 768w" sizes="(max-width: 800px) 100vw, 800px" />															</div>
+				</div>
+		<div class="elementor-element elementor-element-ef1c17a e-con-full e-flex e-con e-child" data-id="ef1c17a" data-element_type="container">
+				<div class="elementor-element elementor-element-bbb46a7 elementor-widget elementor-widget-accordion" data-id="bbb46a7" data-element_type="widget" data-widget_type="accordion.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-accordion">
+							<div class="elementor-accordion-item">
+					<div id="elementor-tab-title-1961" class="elementor-tab-title" data-tab="1" role="button" aria-controls="elementor-tab-content-1961" aria-expanded="false">
+													<span class="elementor-accordion-icon elementor-accordion-icon-right" aria-hidden="true">
+															<span class="elementor-accordion-icon-closed"><i class="fas fa-chevron-down"></i></span>
+								<span class="elementor-accordion-icon-opened"><i class="fas fa-minus"></i></span>
+														</span>
+												<a class="elementor-accordion-title" tabindex="0">Label Film Transparant</a>
+					</div>
+					<div id="elementor-tab-content-1961" class="elementor-tab-content elementor-clearfix" data-tab="1" role="region" aria-labelledby="elementor-tab-title-1961"><p>Label transparan yang hampir nggak terlihat, cocok untuk desain produk yang butuh tampilan minimalis. Produk makin terlihat estetik dengan kesan bersih yang modern.</p></div>
+				</div>
+										
+					</div>
+						</div>
+				</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-5ec6290 elementor-skin-carousel elementor-arrows-yes elementor-pagination-type-bullets elementor-pagination-position-outside elementor-widget elementor-widget-media-carousel" data-id="5ec6290" data-element_type="widget" data-settings="{&quot;slides_per_view&quot;:&quot;3&quot;,&quot;space_between&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0,&quot;sizes&quot;:[]},&quot;autoplay_speed&quot;:3000,&quot;skin&quot;:&quot;carousel&quot;,&quot;effect&quot;:&quot;slide&quot;,&quot;show_arrows&quot;:&quot;yes&quot;,&quot;pagination&quot;:&quot;bullets&quot;,&quot;speed&quot;:500,&quot;autoplay&quot;:&quot;yes&quot;,&quot;loop&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;space_between_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]},&quot;space_between_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:10,&quot;sizes&quot;:[]}}" data-widget_type="media-carousel.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-swiper">
+			<div class="elementor-main-swiper swiper">
+				<div class="swiper-wrapper">
+											<div class="swiper-slide">
+									<div class="elementor-carousel-image" role="img" aria-label="foria-skin" style="background-image: url(&#039;assets/ee4a8d98afcf.png&#039;)">
+
+			
+					</div>
+								</div>
+											<div class="swiper-slide">
+									<div class="elementor-carousel-image" role="img" aria-label="film-transparant" style="background-image: url(&#039;assets/f29f9fe14eb2.webp&#039;)">
+
+			
+					</div>
+								</div>
+											<div class="swiper-slide">
+									<div class="elementor-carousel-image" role="img" aria-label="FORIA 2" style="background-image: url(&#039;assets/ae4680144481.png&#039;)">
+
+			
+					</div>
+								</div>
+											<div class="swiper-slide">
+									<div class="elementor-carousel-image" role="img" aria-label="Copy of Mix mix 1" style="background-image: url(&#039;assets/f6742e3d5753.png&#039;)">
+
+			
+					</div>
+								</div>
+											<div class="swiper-slide">
+									<div class="elementor-carousel-image" role="img" aria-label="Thmbnail-porto-minuman-06" style="background-image: url(&#039;assets/f70ea12fd44e.jpg&#039;)">
+
+			
+					</div>
+								</div>
+									</div>
+															<div class="swiper-pagination"></div>
+																<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
+							<i aria-hidden="true" class="eicon-chevron-left"></i>							<span class="elementor-screen-only">Previous</span>
+						</div>
+						<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
+							<i aria-hidden="true" class="eicon-chevron-right"></i>							<span class="elementor-screen-only">Next</span>
+						</div>
+												</div>
+		</div>
+						</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		                    </div>
+		                    </div>
+        </div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		</div>
+						</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-155177c e-flex e-con-boxed e-con e-parent" data-id="155177c" data-element_type="container" id="promo">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-d108340 elementor-widget elementor-widget-spacer" data-id="d108340" data-element_type="widget" data-widget_type="spacer.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-spacer">
+			<div class="elementor-spacer-inner"></div>
+		</div>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-82f6ea8 e-flex e-con-boxed e-con e-child" data-id="82f6ea8" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-8496b5a e-flex e-con-boxed e-con e-child" data-id="8496b5a" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-c27c0f8 elementor-widget__width-auto elementor-widget elementor-widget-heading" data-id="c27c0f8" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Cetak makin banyak harga makin murah!</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-cc64d11 elementor-widget elementor-widget-text-editor" data-id="cc64d11" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>bandingkan harga yang bisa kamu dapatkan jika, cetak varian di KitaLabel</p>								</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-621630d e-flex e-con-boxed e-con e-child" data-id="621630d" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-c85e2ac e-flex e-con-boxed e-con e-child" data-id="c85e2ac" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-d75fbab e-con-full e-flex e-con e-child" data-id="d75fbab" data-element_type="container">
+				<div class="elementor-element elementor-element-f89835a elementor-widget elementor-widget-heading" data-id="f89835a" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Cetak Variasi desain</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-8eaa9f7 elementor-widget elementor-widget-image" data-id="8eaa9f7" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="eager" decoding="async" width="513" height="413" src="assets/584f433ba4f7.png" class="attachment-large size-large wp-image-2045" alt="" srcset="assets/584f433ba4f7.png 513w, assets/f9ecef88afef.png 300w" sizes="(max-width: 513px) 100vw, 513px" />															</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-d42a2b1 e-con-full e-flex e-con e-child" data-id="d42a2b1" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-d53ab56 e-con-full e-flex e-con e-child" data-id="d53ab56" data-element_type="container">
+				<div class="elementor-element elementor-element-4e3ec69 elementor-widget elementor-widget-heading" data-id="4e3ec69" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Cetak Variasi desain</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-f50e14d elementor-widget elementor-widget-image" data-id="f50e14d" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="eager" decoding="async" width="496" height="408" src="assets/39bb61227814.png" class="attachment-large size-large wp-image-2046" alt="" srcset="assets/39bb61227814.png 496w, assets/34fb21934e4b.png 300w" sizes="(max-width: 496px) 100vw, 496px" />															</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-b100329 e-flex e-con-boxed e-con e-parent" data-id="b100329" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-e2c4422 e-grid e-con-boxed e-con e-child" data-id="e2c4422" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-833dfb8 e-con-full e-flex e-con e-child" data-id="833dfb8" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				</div>
+		<div class="elementor-element elementor-element-c1d5723 e-flex e-con-boxed e-con e-child" data-id="c1d5723" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-d1547ad elementor-widget elementor-widget-heading" data-id="d1547ad" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Dapatkan potongan Rp. 300.000 rupiah untuk order pertama!</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-5635653 elementor-widget elementor-widget-text-editor" data-id="5635653" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p>bandingkan harga yang bisa kamu dapatkan jika, cetak varian di KitaLabel</p>								</div>
+				</div>
+				<div class="elementor-element elementor-element-7dcc31e elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="7dcc31e" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="#sapago" data-chat="true">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Cetak Sekarang</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-22c0126f e-flex e-con-boxed e-con e-parent" data-id="22c0126f" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-7e01f911 elementor-widget elementor-widget-heading" data-id="7e01f911" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Cerita Sukses dari Pelanggan Kami
+</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-437c2d1 elementor-widget elementor-widget-menu-anchor" data-id="437c2d1" data-element_type="widget" data-widget_type="menu-anchor.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-menu-anchor" id="testimoni"></div>
+						</div>
+				</div>
+		<div class="elementor-element elementor-element-c983724 e-grid e-con-full e-con e-child" data-id="c983724" data-element_type="container">
+				<div class="elementor-element elementor-element-9d96859 elementor-widget elementor-widget-counter" data-id="9d96859" data-element_type="widget" data-widget_type="counter.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-counter">
+			<div class="elementor-counter-title">Brand telah ditnaikin level</div>			<div class="elementor-counter-number-wrapper">
+				<span class="elementor-counter-number-prefix"></span>
+				<span class="elementor-counter-number" data-duration="2000" data-to-value="200" data-from-value="0" data-delimiter=",">0</span>
+				<span class="elementor-counter-number-suffix">+</span>
+			</div>
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-e5557fa elementor-widget elementor-widget-counter" data-id="e5557fa" data-element_type="widget" data-widget_type="counter.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-counter">
+			<div class="elementor-counter-title">Label telah di cetak</div>			<div class="elementor-counter-number-wrapper">
+				<span class="elementor-counter-number-prefix"></span>
+				<span class="elementor-counter-number" data-duration="2000" data-to-value="100000000" data-from-value="0" data-delimiter=",">0</span>
+				<span class="elementor-counter-number-suffix">+</span>
+			</div>
+		</div>
+						</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-ce69ae1 elementor-hidden-mobile elementor-arrows-position-inside elementor-pagination-position-outside elementor-widget elementor-widget-image-carousel" data-id="ce69ae1" data-element_type="widget" data-settings="{&quot;slides_to_show&quot;:&quot;1&quot;,&quot;autoplay_speed&quot;:3000,&quot;navigation&quot;:&quot;both&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;infinite&quot;:&quot;yes&quot;,&quot;effect&quot;:&quot;slide&quot;,&quot;speed&quot;:500}" data-widget_type="image-carousel.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-image-carousel-wrapper swiper" role="region" aria-roledescription="carousel" aria-label="Image Carousel" dir="ltr">
+			<div class="elementor-image-carousel swiper-wrapper" aria-live="off">
+								<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 of 5"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="assets/02ea35aa7127.png" alt="Testi-h" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 of 5"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="assets/dd55cf0736bc.png" alt="Testi-l" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 of 5"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="assets/c4d0877e6023.png" alt="Testi-z" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 of 5"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="assets/7e623fe86ab0.png" alt="Testi-h-1" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="5 of 5"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="assets/8a038e71d9bc.png" alt="Testi-q" /></figure></div>			</div>
+												<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-left"></i>					</div>
+					<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-right"></i>					</div>
+				
+									<div class="swiper-pagination"></div>
+									</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-8ade28a elementor-hidden-desktop elementor-hidden-tablet elementor-arrows-position-inside elementor-pagination-position-outside elementor-widget elementor-widget-image-carousel" data-id="8ade28a" data-element_type="widget" data-settings="{&quot;slides_to_show&quot;:&quot;1&quot;,&quot;navigation&quot;:&quot;both&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;,&quot;effect&quot;:&quot;slide&quot;,&quot;speed&quot;:500}" data-widget_type="image-carousel.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-image-carousel-wrapper swiper" role="region" aria-roledescription="carousel" aria-label="Image Carousel" dir="ltr">
+			<div class="elementor-image-carousel swiper-wrapper" aria-live="off">
+								<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 of 5"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="assets/d25d8b780768.png" alt="Testi-hmobile" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 of 5"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="assets/646bfec7d8b4.png" alt="Testi-imobile" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 of 5"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="assets/538987501e6f.png" alt="Testi-zmobile" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 of 5"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="assets/05e0d83710fa.png" alt="Testi-hmobile-1" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="5 of 5"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="assets/1d4786948b89.png" alt="Testi-qmobile" /></figure></div>			</div>
+												<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-left"></i>					</div>
+					<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
+						<i aria-hidden="true" class="eicon-chevron-right"></i>					</div>
+				
+									<div class="swiper-pagination"></div>
+									</div>
+						</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-7b1df62 e-flex e-con-boxed e-con e-parent" data-id="7b1df62" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-9af963f e-flex e-con-boxed e-con e-child" data-id="9af963f" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-86570bd e-flex e-con-boxed e-con e-child" data-id="86570bd" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-5664e84 elementor-widget elementor-widget-heading" data-id="5664e84" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Konsultasikan kebutuhan anda sekarang! 
+Kami berikan solusi terbaik untuk label produk anda</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-40682fb elementor-mobile-align-justify elementor-widget elementor-widget-button" data-id="40682fb" data-element_type="widget" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="#sapago" data-chat="true">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Konsultasi Sekarang</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-d5ee528 e-flex e-con-boxed e-con e-parent" data-id="d5ee528" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-5b4b4836 e-con-full e-flex e-con e-child" data-id="5b4b4836" data-element_type="container">
+				<div class="elementor-element elementor-element-722a1cc1 elementor-widget elementor-widget-heading" data-id="722a1cc1" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Frequently asked question</h2>				</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-540b51a elementor-widget elementor-widget-eael-adv-accordion" data-id="540b51a" data-element_type="widget" data-widget_type="eael-adv-accordion.default">
+				<div class="elementor-widget-container">
+					        <div class="eael-adv-accordion" id="eael-adv-accordion-540b51a" data-scroll-on-click="no" data-scroll-speed="300" data-accordion-id="540b51a" data-accordion-type="accordion" data-toogle-speed="300">
+    <div class="eael-accordion-list">
+                <div id="berapa-minimum-order-di-kitalabel-" class="elementor-tab-title eael-accordion-header" tabindex="0" data-tab="1" aria-controls="elementor-tab-content-8811"><span class="eael-advanced-accordion-icon-closed"><i aria-hidden="true" class="fa-accordion-icon fas fa-plus"></i></span><span class="eael-advanced-accordion-icon-opened"><i aria-hidden="true" class="fa-accordion-icon fas fa-minus"></i></span><span class="eael-accordion-tab-title">Berapa minimum order di KitaLabel ?</span><i aria-hidden="true" class="fa-toggle fas fa-angle-right"></i></div><div id="elementor-tab-content-8811" class="eael-accordion-content clearfix" data-tab="1" aria-labelledby="berapa-minimum-order-di-kitalabel-"><p><span style="font-weight: 400;">Minimum order kami di value 2 juta rupiah</span></p></div>
+                </div><div class="eael-accordion-list">
+                <div id="berapa-maksimal-varian-design-yang-bisa-kita-cetak-" class="elementor-tab-title eael-accordion-header" tabindex="0" data-tab="2" aria-controls="elementor-tab-content-8812"><span class="eael-advanced-accordion-icon-closed"><i aria-hidden="true" class="fa-accordion-icon fas fa-plus"></i></span><span class="eael-advanced-accordion-icon-opened"><i aria-hidden="true" class="fa-accordion-icon fas fa-minus"></i></span><span class="eael-accordion-tab-title">Berapa maksimal varian design yang bisa kita cetak ?</span><i aria-hidden="true" class="fa-toggle fas fa-angle-right"></i></div><div id="elementor-tab-content-8812" class="eael-accordion-content clearfix" data-tab="2" aria-labelledby="berapa-maksimal-varian-design-yang-bisa-kita-cetak-"><p>Maksimal varian yang kami bisa cetak umumnya adalah 5 varian design dengan bentuk dan ukuran yang sama, namun jika ada kebutuhan cetak hingga melebihi 5 varian design bisa dikonsultasikan dulu Dengan kami lebih lanjutnya agar kami tetap memberikan harga terbaik</p></div>
+                </div><div class="eael-accordion-list">
+                <div id="berapa-lama-maksimal-pengerjaan-di-kitalabel" class="elementor-tab-title eael-accordion-header" tabindex="0" data-tab="3" aria-controls="elementor-tab-content-8813"><span class="eael-advanced-accordion-icon-closed"><i aria-hidden="true" class="fa-accordion-icon fas fa-plus"></i></span><span class="eael-advanced-accordion-icon-opened"><i aria-hidden="true" class="fa-accordion-icon fas fa-minus"></i></span><span class="eael-accordion-tab-title">Berapa lama maksimal pengerjaan di KitaLabel?</span><i aria-hidden="true" class="fa-toggle fas fa-angle-right"></i></div><div id="elementor-tab-content-8813" class="eael-accordion-content clearfix" data-tab="3" aria-labelledby="berapa-lama-maksimal-pengerjaan-di-kitalabel"><p><span style="font-weight: 400;">Maksimal pengerjaan di KitaLabel adalah 7 &#8211; 10 hari kerja setelah ACC</span><span style="font-weight: 400;"> Artwork/Design final</span></p></div>
+                </div></div>				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-61c6bd63 elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-mobile e-flex e-con-boxed e-con e-parent" data-id="61c6bd63" data-element_type="container" id="form" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-3c5fe792 e-con-full e-flex e-con e-child" data-id="3c5fe792" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-1bf8d2e elementor-widget elementor-widget-menu-anchor" data-id="1bf8d2e" data-element_type="widget" data-widget_type="menu-anchor.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-menu-anchor" id="form"></div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-4e427300 elementor-widget elementor-widget-heading" data-id="4e427300" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Wujudkan kualitas label terbaik untuk  <span style="color: #f09035">meningkatkan daya jual bisnismu!</span></h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-cc1e52c elementor-widget elementor-widget-heading" data-id="cc1e52c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">(Minimal Pembelian 1000 Pcs)</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-aa2f8a9 elementor-widget__width-initial elementor-button-align-stretch elementor-widget elementor-widget-form" data-id="aa2f8a9" data-element_type="widget" data-settings="{&quot;step_next_label&quot;:&quot;Next&quot;,&quot;step_previous_label&quot;:&quot;Previous&quot;,&quot;button_width&quot;:&quot;100&quot;,&quot;step_type&quot;:&quot;number_text&quot;,&quot;step_icon_shape&quot;:&quot;circle&quot;}" data-widget_type="form.default">
+				<div class="elementor-widget-container">
+							<div class="demo-form-note">Konsultasikan kebutuhan label melalui chat di kanan bawah.</div>
+						</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-8920fba e-flex e-con-boxed e-con e-parent" data-id="8920fba" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-bea0e0d e-con-full e-flex e-con e-child" data-id="bea0e0d" data-element_type="container">
+				<div class="elementor-element elementor-element-1183149 elementor-widget elementor-widget-theme-site-logo elementor-widget-image" data-id="1183149" data-element_type="widget" data-widget_type="theme-site-logo.default">
+				<div class="elementor-widget-container">
+											<a href="#">
+			<img fetchpriority="high" decoding="async" width="486" height="118" src="assets/54fccb1ceebf.png" class="attachment-full size-full wp-image-30" alt="" srcset="assets/54fccb1ceebf.png 486w, assets/bc9d3c871f1f.png 300w" sizes="(max-width: 486px) 100vw, 486px" />				</a>
+											</div>
+				</div>
+				<div class="elementor-element elementor-element-3a9507b elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="3a9507b" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default"><br>Cetak Label? KitaLabel aja</br>
+Di manapun dan kapanpun, cetak label nggak pernah semudah ini!
+Cetak label jadi simpel, pasti di KitaLabel.</h2>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-a23e795 e-con-full e-flex e-con e-child" data-id="a23e795" data-element_type="container">
+		<div class="elementor-element elementor-element-b00314b e-con-full e-flex e-con e-child" data-id="b00314b" data-element_type="container">
+				<div class="elementor-element elementor-element-8d994c9 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="8d994c9" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Alamat</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-2a8e6a2 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="2a8e6a2" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Jl. Kapuk Blok F20-16E Delta, Lippo Cikarang</h2>				</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-b1ee775 e-con-full elementor-hidden-desktop elementor-hidden-tablet elementor-hidden-mobile e-flex e-con e-child" data-id="b1ee775" data-element_type="container">
+		<div class="elementor-element elementor-element-7684e95 e-con-full e-flex e-con e-child" data-id="7684e95" data-element_type="container">
+				<div class="elementor-element elementor-element-c10d7dc elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="c10d7dc" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Kontak</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-5f8501d elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="5f8501d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-heading-title elementor-size-default"><a href="#sapago" data-chat="true" target="_blank">+62 81 1956 4454</a></div>				</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-a3c50a8 e-con-full e-flex e-con e-child" data-id="a3c50a8" data-element_type="container">
+		<div class="elementor-element elementor-element-c38759d e-con-full e-flex e-con e-child" data-id="c38759d" data-element_type="container">
+				<div class="elementor-element elementor-element-2dcdeea elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="2dcdeea" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Email</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-6ac5250 elementor-widget__width-initial elementor-widget elementor-widget-heading" data-id="6ac5250" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">info@kitalabel.com</h2>				</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		
+<!-- HFCM by 99 Robots - Snippet # 4: GTM Body -->
+<!-- Google Tag Manager (noscript) -->
+
+<!-- End Google Tag Manager (noscript) -->
+<!-- /end HFCM by 99 Robots -->
+<!-- Google Tag Manager (noscript) -->
+
+<!-- End Google Tag Manager (noscript) -->
+
+<!-- Google Tag Manager (noscript) -->
+
+<!-- End Google Tag Manager (noscript) -->
+
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<aside id="sapago-hint"><button id="hint-open">Butuh bantuan cetak label? <strong>Tanya di sini 👋</strong></button><button id="hint-close" aria-label="Tutup pesan">×</button></aside>
+<button id="chat-launcher" aria-label="Buka chat SapaGo" aria-expanded="false" aria-controls="sapago-panel"><svg width="27" height="27" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 11.5a8.5 8.5 0 0 1-8.5 8.5H4l-2 2V11.5A8.5 8.5 0 0 1 10.5 3h2a8.5 8.5 0 0 1 8.5 8.5Z"/><path d="M7 11h10M7 15h6"/></svg></button>
+<section id="sapago-panel" role="dialog" aria-label="Chat KitaLabel dengan SapaGo" hidden>
+ <header class="chat-head"><span class="chat-avatar">K</span><div><strong>KitaLabel Assistant</strong><small><i></i> Siap membantu kebutuhan labelmu</small></div><button id="chat-close" aria-label="Tutup chat">×</button></header>
+ <div class="demo-notice">DEMO INTERAKTIF · Balasan simulasi</div>
+ <div id="chat-messages" role="log" aria-live="polite"><div class="bubble assistant">Halo! 👋 Selamat datang di KitaLabel.<br><br>Mau cetak label untuk produk apa? Saya bantu pilih material dan jelaskan penawaran yang tersedia.<time>KitaLabel Assistant</time></div></div>
+ <div id="quick-replies"><button data-question="Apa saja pilihan material label?">Pilihan material</button><button data-question="Bisa cetak 5 varian desain?">Cetak 5 varian</button><button data-question="Ada promo order pertama?">Promo pertama</button></div>
+ <form id="chat-form"><label for="chat-input" class="sr-only">Pesan untuk KitaLabel</label><input id="chat-input" placeholder="Tulis pesanmu di sini…" autocomplete="off" maxlength="1500" required><button type="submit" aria-label="Kirim pesan">➤</button></form>
+ <footer class="chat-foot">Powered by <img src="assets/sapago-logo.png" alt="SapaGo"> <span>· Demo</span></footer>
+</section>
+<script src="config.js"></script><script src="demo.js"></script></body>
+</html>
