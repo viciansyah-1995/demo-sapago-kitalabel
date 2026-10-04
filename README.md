@@ -1,5 +1,9 @@
 # KitaLabel × SapaGo demo
 
+[Buka demo privat](https://kitalabel-sapago-demo.vvidiviciansyah.chatgpt.site) (login ChatGPT diperlukan).
+
+![Preview landing page dan widget demo](preview.jpg)
+
 Landing page duplikat https://marketz.kitalabel.com/ dengan aset, warna, konten dan video dari referensi publik. Runtime WordPress dan tracking dilepas. Interaksi material, galeri, FAQ dan chat berjalan dengan JavaScript lokal.
 
 Preview: `python3 -m http.server 4173 --bind 127.0.0.1 --directory dist`
