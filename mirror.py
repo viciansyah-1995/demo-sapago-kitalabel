@@ -64,7 +64,7 @@ source=re.sub(r'href="https://(?:api\.whatsapp\.com|wa\.me)[^"]*"', 'href="#sapa
 source=source.replace('href="#form"', 'href="#sapago" data-chat="true"')
 source=re.sub(r'href="https://marketz\.kitalabel\.com/(?:kitalabel-doxa-lp-new/)?"', 'href="#"', source)
 source=source.replace('</head>', '<link rel="stylesheet" href="demo.css"></head>')
-source=source.replace('</body>', (root/'widget.html').read_text()+'<script src="config.js"></script><script src="demo.js"></script></body>')
+source=source.replace('</body>', (root/'widget.html').read_text()+'<script src="demo.js"></script></body>')
 (dist/'index.html').write_text(source)
 manifest=json.loads((root/'.openai/hosting.json').read_text())
 manifest['static']={'directory':'dist'}
